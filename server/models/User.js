@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
-
+const trailSchema = require('./Trail');
 
 const userSchema = new Schema(
 {
@@ -13,6 +13,7 @@ const userSchema = new Schema(
     type: String,
     required: true,
     },
+    trails: [trailSchema],
 },
 
 {

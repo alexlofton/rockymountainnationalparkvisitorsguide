@@ -1,7 +1,11 @@
-const { Schema, model } = require('mongoose');
+const { Schema, Types, model } = require('mongoose');
 
 const trailSchema = new Schema(
 {
+    // trailId: {
+    //     type: Schema.Types.ObjectId,
+    //     default: () => new Types.ObjectId()
+    // },
     name: {
         type: String
     },
@@ -14,6 +18,7 @@ const trailSchema = new Schema(
     image: {
         type: String
     }
+
 },
 
 {
