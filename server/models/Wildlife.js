@@ -9,16 +9,14 @@ const wildlifeSchema = new Schema(
             String
         },
         description: {
-            String
-        },
-        season: {
-            String
+            type: String
         },
         image: {
             type: String
         },
-        seebByUser: {
-            type: Boolean
+        seenByUser: {
+            type: Boolean,
+            default: false
         }
     },
 
@@ -28,5 +26,9 @@ const wildlifeSchema = new Schema(
         },
     }
 );
+
+wildlifeSchema.virtual('notSeenByUser').get(function() {
+    return !this.seenByUser;
+});
 
 module.exports = wildlifeSchema;
