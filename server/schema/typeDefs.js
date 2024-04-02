@@ -40,6 +40,13 @@ const typeDefs = gql`
         saveTrail(trailData: TrailInput):User
         removeTrail(trailId: ID):User
     }
+
+    type Mutation {
+        login(username: String, password: String):Auth
+        addUser(username: String, password: String):Auth
+        saveTrail(trailData: TrailInput):User
+        addTrail(trailId: ID):User
+    }
 `
 
 module.exports = typeDefs;
