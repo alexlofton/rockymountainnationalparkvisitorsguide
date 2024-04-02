@@ -32,3 +32,14 @@
     font-family: RnB, Arial, Helvetica, sans-serif;
     margin-left: 1.5rem;
 }
+
+.footer {
+    background-color: #1b430b;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
