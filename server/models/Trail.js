@@ -1,4 +1,5 @@
 const { Schema, Types, model } = require('mongoose');
+const commentSchema = require("./Comment")
 
 const trailSchema = new Schema(
 {
@@ -14,9 +15,10 @@ const trailSchema = new Schema(
     },
     image: {
         type: String
-    }
-
+    },
+    comments: [commentSchema]
 },
+
 
 {
     toJSON: {

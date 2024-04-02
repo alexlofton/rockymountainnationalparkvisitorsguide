@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt');
 const trailSchema = require('./Trail');
 const wildlifeSchema = require('./Wildlife');
 const commentSchema = require('./Comment');
+const completedTrailSchema = require("./completedTrail.js")
 
 const userSchema = new Schema(
 {
@@ -17,6 +18,7 @@ const userSchema = new Schema(
     },
     
     trails: [trailSchema],
+    completedTrails: [completedTrailSchema],
     wildlife: [wildlifeSchema],
     comments: [commentSchema]
 },
