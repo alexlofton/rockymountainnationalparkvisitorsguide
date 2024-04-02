@@ -4,7 +4,7 @@ import './index.css'
 
 import App from './App.jsx';
 // import Home from './pages/Home';
-import NotFound from './pages/NotFound';
+// import NotFound from './pages/NotFound';
 
 const router = createBrowserRouter([
     {
