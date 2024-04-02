@@ -1,6 +1,8 @@
 import './App.css';
 import { Outlet } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+import Header from './components/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const client = new ApolloClient({
     uri: '/graphql',
@@ -11,7 +13,8 @@ function App() {
     return (
         <ApolloProvider client={client}>
             <div className="">
-                <Outlet />
+                <Header />
+                {/* <Outlet /> */}
             </div>
         </ApolloProvider>
     );
