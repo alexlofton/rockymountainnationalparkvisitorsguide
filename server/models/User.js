@@ -17,8 +17,8 @@ const userSchema = new Schema(
     required: true,
     },
     
-    trails: [trailSchema],
-    completedTrails: [completedTrailSchema],
+    trails: [trailSchema], // wishlist
+    completedTrails: [completedTrailSchema], // strings that will receive mapped names from Trail model and complete date from datepicker
     wildlife: [wildlifeSchema],
     comments: [commentSchema]
 },

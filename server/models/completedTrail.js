@@ -9,9 +9,8 @@ const completedTrailSchema = new Schema(
         type: String
     },
     //possible reference to userModel?
+    // nice to have user trail comments upon completion
 },
-
-
 {
     toJSON: {
     virtuals: true,
