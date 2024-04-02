@@ -6,6 +6,7 @@ const typeDefs = gql`
         username: String
         password: String
         trails: [Trail]
+        completedTrails: [CompletedTrail]
     }
 
     type Trail {
@@ -13,8 +14,8 @@ const typeDefs = gql`
         name: String
         description: String
         weather: String
-        image: String
-    
+        image: String,
+        comments: [Comment]
     }
 
     input TrailInput {
@@ -23,6 +24,18 @@ const typeDefs = gql`
         description: String
         weather: String
         image: String
+    }
+
+    type CompletedTrail {
+        trailName: String,
+        dateCompleted: String,
+        trailComment: String
+    }
+
+    Comment {
+        commentText: String,
+        likes: Int,
+        likesCount: Int
     }
 
     type Auth {

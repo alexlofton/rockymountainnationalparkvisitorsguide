@@ -10,6 +10,9 @@ const completedTrailSchema = new Schema(
     },
     //possible reference to userModel?
     // nice to have user trail comments upon completion
+    trailComment :{
+        type: String
+    }
 },
 {
     toJSON: {
