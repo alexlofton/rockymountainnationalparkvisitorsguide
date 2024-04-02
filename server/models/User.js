@@ -1,6 +1,8 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 const trailSchema = require('./Trail');
+const wildlifeSchema = require('./Wildlife');
+const commentSchema = require('./Comment');
 
 const userSchema = new Schema(
 {
@@ -15,6 +17,8 @@ const userSchema = new Schema(
     },
     
     trails: [trailSchema],
+    wildlife: [wildlifeSchema],
+    comments: [commentSchema]
 },
 
 {
