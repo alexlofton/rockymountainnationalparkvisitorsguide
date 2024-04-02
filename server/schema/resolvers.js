@@ -1,74 +1,101 @@
-const { AuthenticationError } = require('apollo-server-express');
-const { User } = require('../models');
-const { signToken } = require('../utils/auth');
+const { AuthenticationError } = require("apollo-server-express");
+const { User } = require("../models");
+const { signToken } = require("../utils/auth");
 
 const resolvers = {
+  Query: {
+    me: async (parent, args, context) => {
+      if (context.user) {
+        const userData = await User.findOne({ _id: context.user._id })
+          .select("-__v -password")
+          .populate("trails");
 
-Query: {
-me: async (parent, args, context) => {
-if (context.user) {
-const userData = await User.findOne({ _id: context.user._id }).select('-__v -password').populate("trails");
+        return userData;
+      }
 
-return userData;
-}
+      throw new AuthenticationError("Not logged in");
+    },
+    // need queries for Trails
+    allTrails: async (parent, args, context) => {
+      if (context.user) {
+        const trailData = await Trail.find({});
 
-throw new AuthenticationError('Not logged in');
-},
-},
+        return trailData;
+      }
 
-Mutation: {
-addUser: async (parent, args) => {
-const user = await User.create(args);
-const token = signToken(user);
+      throw new AuthenticationError("Not logged in");
+    },
+  },
 
-return { token, user };
-},
+  Mutation: {
+    addUser: async (parent, args) => {
+      const user = await User.create(args);
+      const token = signToken(user);
 
-login: async (parent, { username, password }) => {
-const user = await User.findOne({ username });
+      return { token, user };
+    },
 
-if (!user) {
-throw new AuthenticationError('Incorrect credentials');
-}
+    login: async (parent, { username, password }) => {
+      const user = await User.findOne({ username });
 
-const correctPw = await user.isCorrectPassword(password);
+      if (!user) {
+        throw new AuthenticationError("Incorrect credentials");
+      }
 
-if (!correctPw) {
-throw new AuthenticationError('Incorrect credentials');
-}
+      const correctPw = await user.isCorrectPassword(password);
 
-const token = signToken(user);
-return { token, user };
-},
+      if (!correctPw) {
+        throw new AuthenticationError("Incorrect credentials");
+      }
 
-saveTrail: async (parent, { trailData }, context) => {
-if (context.user) {
-const updatedUser = await User.findByIdAndUpdate(
-{ _id: context.user._id },
-{ $push: { trails: trailData } },
-{ new: true }
-);
+      const token = signToken(user);
+      return { token, user };
+    },
 
-return updatedUser;
-}
+    saveTrail: async (parent, { trailData }, context) => {
+      if (context.user) {
+        const updatedUser = await User.findByIdAndUpdate(
+          { _id: context.user._id },
+          { $push: { trails: trailData } },
+          { new: true }
+        );
 
-throw new AuthenticationError('You need to be logged in!');
-},
+        return updatedUser;
+      }
 
-removeTrail: async (parent, { trailId }, context) => {
-if (context.user) {
-const updatedUser = await User.findOneAndUpdate(
-{ _id: context.user._id },
-{ $pull: { trails: { trailId } } },
-{ new: true }
-);
+      throw new AuthenticationError("You need to be logged in!");
+    },
 
-return updatedUser;
-}
+    removeTrail: async (parent, { trailId }, context) => {
+      if (context.user) {
+        const updatedUser = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $pull: { trails: { trailId } } },
+          { new: true }
+        );
 
-throw new AuthenticationError('You need to be logged in!');
-},
-},
+        return updatedUser;
+      }
+
+      throw new AuthenticationError("You need to be logged in!");
+    },
+
+    completeTrail: async (parent, { completeData }, context) => {
+        if (context.user) {
+        const updatedUser = await User.findByIdAndUpdate(
+        { _id: context.user._id },
+        { $push: { completedTrails: completeData } },
+        { new: true }
+        );
+        
+        return updatedUser;
+        }
+        
+        throw new AuthenticationError('You need to be logged in!');
+        },
+
+        // remove from complete trails nice to have reference removeTrail
+  },
 };
 
 module.exports = resolvers;

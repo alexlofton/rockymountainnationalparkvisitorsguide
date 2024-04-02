@@ -32,7 +32,13 @@ const typeDefs = gql`
         trailComment: String
     }
 
-    Comment {
+    input CompletedTrailInput {
+        trailName: String,
+        dateCompleted: String,
+        trailComment: String
+    }
+
+    type Comment {
         commentText: String,
         likes: Int,
         likesCount: Int
@@ -45,6 +51,7 @@ const typeDefs = gql`
 
     type Query {
         me: User
+        allTrails: Trail
     }
     
     type Mutation {
@@ -52,14 +59,10 @@ const typeDefs = gql`
         addUser(username: String, password: String):Auth
         saveTrail(trailData: TrailInput):User
         removeTrail(trailId: ID):User
+        completeTrail(completeData: CompletedTrailInput):User
     }
 
-    type Mutation {
-        login(username: String, password: String):Auth
-        addUser(username: String, password: String):Auth
-        saveTrail(trailData: TrailInput):User
-        addTrail(trailId: ID):User
-    }
+   
 `
 
 module.exports = typeDefs;
