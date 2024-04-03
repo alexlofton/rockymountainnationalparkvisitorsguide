@@ -13,11 +13,12 @@ const wildlifeSchema = new Schema(
         },
         image: {
             type: String
-        },
-        seenByUser: {
-            type: Boolean,
-            default: false
         }
+        // },
+        // seenByUser: {
+        //     type: Boolean,
+        //     default: false
+        // }
     },
 
     {
@@ -31,4 +32,6 @@ wildlifeSchema.virtual('notSeenByUser').get(function() {
     return !this.seenByUser;
 });
 
-module.exports = wildlifeSchema;
+const Wildlife = model("wildlife", wildlifeSchema)
+
+module.exports = Wildlife;

@@ -27,6 +27,6 @@ const trailSchema = new Schema(
 }
 );
 
-const Trail = model("trail", trailSchema)
+// const Trail = model("trail", trailSchema)
 
-module.exports = Trail;
+module.exports = trailSchema;
