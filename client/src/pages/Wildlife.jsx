@@ -9,7 +9,6 @@ function WildlifePage() {
       name: 'TEST',
       scientificName: 'TEST TEST',
       imageSrc: 'TEST.jpg',
-      season: 'TEST',
       description: 'This is only a test',
       seen: false
     },
@@ -18,7 +17,6 @@ function WildlifePage() {
       name: 'Cat',
       scientificName: 'CAT TEST',
       imageSrc: 'cat.jpg',
-      season: 'TEST',
       description: 'Cat',
       seen: false
     },
