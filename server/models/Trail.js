@@ -1,4 +1,5 @@
 const { Schema, Types, model } = require('mongoose');
+const commentSchema = require("./Comment")
 
 const trailSchema = new Schema(
 {
@@ -9,14 +10,15 @@ const trailSchema = new Schema(
     description: {
         type: String
     },
-    weather: {
+    length: {
         type: String
     },
     image: {
         type: String
-    }
-
+    },
+    comments: [commentSchema]
 },
+
 
 {
     toJSON: {
@@ -25,4 +27,6 @@ const trailSchema = new Schema(
 }
 );
 
-module.exports = trailSchema;
+const Trail = model("trail", trailSchema)
+
+module.exports = Trail;

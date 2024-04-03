@@ -18,7 +18,7 @@ const commentSchema = new Schema(
 );
 
 commentSchema.virtual('likesCount').get(function() {
-    return this.likes.length;
+    return this.likes // possible need to add.value
 });
 
 module.exports = commentSchema;
