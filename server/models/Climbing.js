@@ -1,5 +1,6 @@
 const { Schema, types, model } = require('mongoose');
 const commentSchema = require("./Comment")
+const trailSchema = require("./Trail")
 
 const climbingSchema = new Schema(
     {
@@ -29,6 +30,6 @@ const climbingSchema = new Schema(
     }
 );
 
-const Climbing = model("climbing", climbingSchema)
+// const Climbing = model("climbing", climbingSchema)
 
-module.exports = Climbing; 
+module.exports = climbingSchema; 
