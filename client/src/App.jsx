@@ -19,16 +19,16 @@ const client = new ApolloClient({
 function App() {
     return (
 
-     <ChakraProvider> 
-       <ApolloProvider client={client}>
-            <div className="">
-                <Header />
-                <Outlet />
-                <Footer />
-                {/* <RMNP /> */}
-            </div>
-        </ApolloProvider>
-     </ChakraProvider>
+        <ChakraProvider>
+            <ApolloProvider client={client}>
+                <div className="">
+                    <Header />
+                    <Outlet />
+                    <Footer />
+                    {/* <RMNP /> */}
+                </div>
+            </ApolloProvider>
+        </ChakraProvider>
     );
 }
 
