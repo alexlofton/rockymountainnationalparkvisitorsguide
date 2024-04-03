@@ -4,8 +4,9 @@ import './App.css';
 import { Outlet } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Header from './components/Header';
+
 import Footer from './components/Footer/Footer'; //Added footer component
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { ChakraProvider } from '@chakra-ui/react' // Imports Chakra UI
 
 const client = new ApolloClient({
@@ -17,10 +18,12 @@ const client = new ApolloClient({
 
 function App() {
     return (
+
      <ChakraProvider> 
        <ApolloProvider client={client}>
             <div className="">
                 <Header />
+                <Outlet />
                 <Footer />
                 {/* <RMNP /> */}
             </div>
