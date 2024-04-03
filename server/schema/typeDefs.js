@@ -44,6 +44,12 @@ const typeDefs = gql`
         likesCount: Int
     }
 
+    input CommentInput {
+        commentText: String,
+        likes: Int,
+        likesCount: Int
+    }
+
     type Auth {
         token: ID
         user: User

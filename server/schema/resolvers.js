@@ -3,81 +3,81 @@ const { User } = require("../models");
 const { signToken } = require("../utils/auth");
 
 const resolvers = {
-  Query: {
+Query: {
     me: async (parent, args, context) => {
-      if (context.user) {
+    if (context.user) {
         const userData = await User.findOne({ _id: context.user._id })
-          .select("-__v -password")
-          .populate("trails");
+        .select("-__v -password")
+        .populate("trails");
 
         return userData;
-      }
+    }
 
-      throw new AuthenticationError("Not logged in");
+    throw new AuthenticationError("Not logged in");
     },
     // need queries for Trails
     allTrails: async (parent, args, context) => {
-      if (context.user) {
+    if (context.user) {
         const trailData = await Trail.find({});
 
         return trailData;
-      }
+    }
 
-      throw new AuthenticationError("Not logged in");
+    throw new AuthenticationError("Not logged in");
     },
-  },
+},
 
-  Mutation: {
+Mutation: {
     addUser: async (parent, args) => {
-      const user = await User.create(args);
-      const token = signToken(user);
+    const user = await User.create(args);
+    const token = signToken(user);
 
-      return { token, user };
+    return { token, user };
     },
 
     login: async (parent, { username, password }) => {
-      const user = await User.findOne({ username });
+    const user = await User.findOne({ username });
 
-      if (!user) {
+    if (!user) {
         throw new AuthenticationError("Incorrect credentials");
-      }
+    }
 
-      const correctPw = await user.isCorrectPassword(password);
+    const correctPw = await user.isCorrectPassword(password);
 
-      if (!correctPw) {
+    if (!correctPw) {
         throw new AuthenticationError("Incorrect credentials");
-      }
+    }
 
-      const token = signToken(user);
-      return { token, user };
+    const token = signToken(user);
+    return { token, user };
     },
 
     saveTrail: async (parent, { trailData }, context) => {
-      if (context.user) {
+    if (context.user) {
         const updatedUser = await User.findByIdAndUpdate(
-          { _id: context.user._id },
-          { $push: { trails: trailData } },
-          { new: true }
+        { _id: context.user._id },
+        { $push: { trails: trailData } },
+        { new: true }
         );
 
         return updatedUser;
-      }
+    }
 
-      throw new AuthenticationError("You need to be logged in!");
+    throw new AuthenticationError("You need to be logged in!");
     },
 
     removeTrail: async (parent, { trailId }, context) => {
-      if (context.user) {
+    if (context.user) {
         const updatedUser = await User.findOneAndUpdate(
-          { _id: context.user._id },
-          { $pull: { trails: { trailId } } },
-          { new: true }
+        { _id: context.user._id },
+        { $pull: { trails: { trailId } } },
+        { new: true }
         );
 
         return updatedUser;
-      }
+    }
 
-      throw new AuthenticationError("You need to be logged in!");
+    throw new AuthenticationError("You need to be logged in!");
     },
 
     completeTrail: async (parent, { completeData }, context) => {
@@ -95,7 +95,11 @@ const resolvers = {
         },
 
         // remove from complete trails nice to have reference removeTrail
-  },
+
+
+        // comment
+
+    },
 };
 
 module.exports = resolvers;

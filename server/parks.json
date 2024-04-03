@@ -1,0 +1,50 @@
+[
+    {
+        "name": "trail name",
+        "description": "trail description",
+        "length": "",
+        "image": "url",
+        "comments": [
+            {
+            "commentText": "Trail comments by user", 
+            "likes": 5
+            }
+        ]
+    },
+    {
+        "name": "Mt. Ida",
+        "description": "Mount Ida stands at an elevation of 12,880 feet, providing stunning panoramic views of the surrounding alpine landscapes. The trailhead starts from Milner Pass on Trail Ridge Road, and the hike typically takes around 6-8 hours round trip, covering approximately 9 miles. Hikers traverse through subalpine meadows, dense forests, and rocky terrain, encountering diverse flora and fauna along the way, including elk, marmots, and various wildflowers. The final ascent to the summit involves a steep and rocky climb, rewarding trekkers with breathtaking vistas of nearby peaks, alpine lakes, and expansive valleys. Hikers should be well-prepared with sturdy hiking boots, layers of clothing for unpredictable weather, plenty of water, and snacks. Due to the high elevation and rugged terrain, it's essential to acclimate properly and be cautious of altitude sickness symptoms.",
+        "length": "9.28 miles out-and-back",
+        "image": "url",
+        "comments": [
+            {
+            "commentText": "Trail comments by user", 
+            "likes": 1
+            }
+        ]
+    },
+    {
+        "name": "Flattop Mountain and Hallett Peak",
+        "description": "Flattop Mountain stands at 12,324 feet, and Hallett Peak rises to 12,713 feet, providing stunning panoramic views of the surrounding alpine landscapes. The trailhead begins at the Bear Lake Trailhead, and the hike typically covers approximately 10 miles round trip, including both peaks. Hikers ascend through subalpine forests, past picturesque alpine lakes such as Dream Lake and Emerald Lake, and traverse open tundra before reaching the summits. The climb to Flattop Mountain involves a steady ascent with well-maintained trails, while the final push to Hallett Peak is more challenging, requiring some scrambling over rocky terrain. From the summits, hikers are rewarded with breathtaking vistas of nearby peaks, glacier-carved valleys, and expansive vistas of Rocky Mountain National Park. Hikers should be prepared with sturdy hiking boots, layers of clothing for unpredictable weather, plenty of water, and snacks. Additionally, due to the high elevation and rugged terrain, it's essential to acclimate properly and be cautious of altitude sickness symptoms.",
+        "length": "9.73 miles out-and-back",
+        "image": "url",
+        "comments": [
+            {
+            "commentText": "Trail comments by user", 
+            "likes": 2
+            }
+        ]
+    },
+    {
+        "name": "Ypsilion Lake Trail",
+        "description": "The Ypsilon Lake Trail in Colorado offers hikers a scenic adventure in Rocky Mountain National Park. Starting from the Lawn Lake Trailhead, the trail is approximately 9.4 miles round trip and gains about 2,200 feet in elevation. Hikers traverse through lush forests, alongside cascading streams, and across open meadows filled with wildflowers. The trail offers stunning views of the surrounding peaks, including Mount Ypsilon. Upon reaching Ypsilon Lake, hikers are rewarded with breathtaking vistas of the lake nestled amidst towering peaks and rugged terrain. Wildlife sightings are common along the trail, including elk, mule deer, and various bird species. Hikers should come prepared with sturdy hiking boots, layers of clothing for changing weather conditions, plenty of water, and snacks. Additionally, it's important to be aware of the potential for afternoon thunderstorms in the Rocky Mountains and to start the hike early in the day to avoid exposure to inclement weather.",
+        "length": "",
+        "image": "url",
+        "comments": [
+            {
+            "commentText": "Trail comments by user", 
+            "likes": 3
+            }
+        ]
+    }
+]

@@ -10,7 +10,7 @@ const trailSchema = new Schema(
     description: {
         type: String
     },
-    weather: {
+    length: {
         type: String
     },
     image: {
