@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Image, Text, Checkbox } from '@chakra-ui/react';
 
-function WildlifeComponent({ name, imageSrc, scientificName, season, description, seen, onCheckboxChange }) {
+function WildlifeComponent({ name, imageSrc, scientificName, description, seen, onCheckboxChange }) {
   return (
     <Box p={4}>
       <Image src={imageSrc} alt={name} />
