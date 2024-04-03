@@ -10,7 +10,7 @@ const Trails = () => {
     return (
         <div>
             {/* <input type="text" /> */}
-            <TrailList trails={dummyTrailData}/>
+            <TrailList key={1} trails={dummyTrailData}/>
         </div>
     )
 }
