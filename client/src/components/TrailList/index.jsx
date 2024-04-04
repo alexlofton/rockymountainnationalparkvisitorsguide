@@ -20,8 +20,8 @@ const TrailList = ({ trails }) => {
             <Accordion>
                 {trails &&
                     trails.map((trail) => (
-                        <AccordionItem key={trail._id}>
-                            <AccordionButton>
+                        <AccordionItem key={trail._id} className='accItem'>
+                            <AccordionButton className='accBtn'>
                                     <Grid templateColumns="repeat(2, 1fr)" w="100%">
                                         <GridItem className='trailGitem' textAlign='left'>
                                             {trail.name}
@@ -32,8 +32,16 @@ const TrailList = ({ trails }) => {
                                     </Grid>
                                 <AccordionIcon />
                             </AccordionButton>
-                            <AccordionPanel>
+                            <AccordionPanel className='accPanel'>
+                                <p>
                                 {trail.description}
+                                </p>
+                                <div className='btnDiv'>
+                                <button className='accPanBtn'>
+                                    FULL PAGE
+                                </button>
+                                </div>
+                                <img src={trail.image} alt="" />
                             </AccordionPanel>
                         </AccordionItem>
                     ))

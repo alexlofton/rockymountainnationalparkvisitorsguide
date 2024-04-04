@@ -18,10 +18,10 @@ const router = createBrowserRouter([
             //     element: <Home />
             // }
             // REFACTOR ONCE ROUTES ARE SETUP
-            // {
-            //     index: true,
-            //     element: <Trails />
-            // }
+            {
+                index: true,
+                element: <Trails />
+            }
         ],
     },
 ]);
