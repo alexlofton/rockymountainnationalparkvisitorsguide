@@ -13,6 +13,6 @@ const Trails = () => {
             <TrailList key={1} trails={dummyTrailData}/>
         </div>
     )
-}
+};
 
-export default Trails
+export default Trails;
