@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Heading } from '@chakra-ui/react';
-import WildlifeComponent from '../components/Wildlife';
+import WildlifeComponent from '../components/Wildlife/WildlifeComponent';
 
 function WildlifePage() {
   const [wildlifeList, setWildlifeList] = useState([

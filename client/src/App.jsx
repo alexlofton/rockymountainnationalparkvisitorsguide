@@ -1,11 +1,12 @@
 
 import * as React from 'react'
 import './App.css';
-import { Outlet } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
-import Header from './components/Header';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { ChakraProvider } from '@chakra-ui/react' // Imports Chakra UI
+
+import { Outlet } from 'react-router-dom';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar/index';
 
 const client = new ApolloClient({
     uri: '/graphql',
@@ -18,10 +19,13 @@ function App() {
     return (
      <ChakraProvider> 
        <ApolloProvider client={client}>
-            <div className="">
+            <>
                 <Header />
-                {/* <RMNP /> */}
-            </div>
+                <Sidebar />
+                <main>
+                    <Outlet />
+                </main>
+            </>
         </ApolloProvider>
      </ChakraProvider>
     );

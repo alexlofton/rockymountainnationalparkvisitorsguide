@@ -9,4 +9,6 @@ const Trails = () => {
 
         </div>
     )
-}
+};
+
+export default Trails;

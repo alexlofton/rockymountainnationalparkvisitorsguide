@@ -1,0 +1,15 @@
+.NavBar{
+    float: left;
+}
+
+.NavItem:hover {
+    transform: scale(1.06);
+    color: darkgreen;
+    transition: 300ms;
+}
+
+main {
+    display: inline-block;
+    margin: 20px;
+    padding-left: 15%;
+}
