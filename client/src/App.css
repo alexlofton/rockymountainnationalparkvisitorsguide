@@ -1,3 +1,7 @@
+.NavBar {
+    box-shadow: 1px 0 20px -5px #000000
+}
+
 .NavBar{
     float: left;
 }

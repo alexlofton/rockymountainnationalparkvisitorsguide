@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Fern Lake",
+        "description": "Large boulders to climb at Fern Lake. 3.9 Miles from Trailhead.",
+        "location": "40.33698, -105.67651",
+        "image": "",
+        "trail": ""
+    },
+    {
+        "name": "Alberta Falls",
+        "description": "",
+        "location": "",
+        "image": "",
+        "trail": ""
+    },
+    {
+        "name": "Gem Lake Wall",
+        "description": "Wide swath of granite east of Gem Lake. Accessible from Black Canyon trail by way of Lumpy Ridge trailhead.",
+        "location": "40.40987, -105.50329",
+        "image": "",
+        "trail": "Lumpy Ridge, Black Canyon"
+    },
+    {
+        "name": "Ouzel Falls Crag",
+        "description": "Toproped crag with amazing views.",
+        "location": "40.69259, -105.34507",
+        "image": "",
+        "trail": "Ouzel Falls"
+    },
+    {
+        "name": "Deer Mountain Buttress",
+        "description": "A high and lonely 600' cliff, this face provides excellent views and the granite is perfect for climbing.",
+        "location": "40.379, -105.5892",
+        "image": "",
+        "trail": "Deer Mountain"
+    },
+    {
+        "name": "Copeland Falls Boulder",
+        "description": "An intermediate boulder experience near the lower Copeland Falls. ",
+        "location": "40.2048, -105.57096",
+        "image": "",
+        "trail": "Wild Basin"
+    },
+    {
+        "name": "Bierstadt Rock",
+        "description": "A great starter are, this zone overlooking Bierstadt lake includes easier scrambles up rocks as well as some more challenging highballs.",
+        "location": "39.6326, -105.6211",
+        "image": "",
+        "trail": "Chicago Lakes"
+    },
+    {
+        "name": "Twin Owls",
+        "description": "A fairly iconic and aptly named rock, there are many difficult climbs here, as well as some more manageable ones on satellite crags surrounding the main formation.",
+        "location": "40.4029, -105.5188",
+        "image": "",
+        "trail": "Lumpy Ridge"
+    },
+    {
+        "name": "Notchtop",
+        "description": "",
+        "location": "40.3186, -105.694",
+        "image": "",
+        "trail": ""
+    },
+    {
+        "name": "",
+        "description": "",
+        "location": "",
+        "image": "",
+        "trail": ""
+    }
+]

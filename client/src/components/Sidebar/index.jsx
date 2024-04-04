@@ -40,14 +40,14 @@ const Sidebar = () => {
             </ListItem>
 
             <ListItem className="NavItem">
-                <NavLink to = "/Activities">
+                <NavLink to = "/VisitorAmenities">
                 <ListIcon as={MdKayaking} color ="white"/>
-                    Activities
+                    Visitor Amenities
                 </NavLink>
             </ListItem>
 
             <ListItem className="NavItem">
-                <NavLink to = "/User">
+                <NavLink to = "/Profile">
                 <ListIcon as={MdPerson3} color ="white"/>
                     Profile
                 </NavLink>

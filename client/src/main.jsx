@@ -6,7 +6,9 @@ import App from './App.jsx';
 import Home from './pages/Home';
 import Trails from './pages/Trails.jsx';
 import Wildlife from './pages/Wildlife.jsx';
+import VisitorAmeneties from './components/Visitor-Amenities/VisitorAmenenties.jsx';
 import NotFound from './pages/NotFound';
+import Profile from './pages/Profile.jsx';
 
 const router = createBrowserRouter([
     {
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
             {
                 path: 'Wildlife',
                 element: <Wildlife />
+            },
+            {
+                path: 'VisitorAmenities',
+                element: <VisitorAmeneties />
+            },
+            {
+                path: 'Profile',
+                element: <Profile />
             }
         ],
     },
