@@ -1,27 +1,41 @@
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css'
-import Trails from './pages/Trails.jsx';
+
 import App from './App.jsx';
-// import Home from './pages/Home';
-// import NotFound from './pages/NotFound';
+import Home from './pages/Home';
+import Trails from './pages/Trails.jsx';
+import Wildlife from './pages/Wildlife.jsx';
+import VisitorAmeneties from './components/Visitor-Amenities/VisitorAmenenties.jsx';
+import NotFound from './pages/NotFound';
+import Profile from './pages/Profile.jsx';
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <App />,
-        // errorElement: <NotFound />,
+        errorElement: <NotFound />,
         children: [
-            // UNCOMMENT THIS WHEN HOME IS MADE AND REFACTOR TRAIL TO GO WHEN PATH IS '/TRAILS'
-            // {
-            //     index: true,
-            //     element: <Home />
-            // }
-            // REFACTOR ONCE ROUTES ARE SETUP
-            // {
-            //     index: true,
-            //     element: <Trails />
-            // }
+            {
+                index: true,
+                element: <Home />
+            },
+            {
+                path: 'Trails',
+                element: <Trails />
+            },
+            {
+                path: 'Wildlife',
+                element: <Wildlife />
+            },
+            {
+                path: 'VisitorAmenities',
+                element: <VisitorAmeneties />
+            },
+            {
+                path: 'Profile',
+                element: <Profile />
+            }
         ],
     },
 ]);

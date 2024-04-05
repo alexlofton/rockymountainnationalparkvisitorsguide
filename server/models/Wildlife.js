@@ -31,4 +31,6 @@ wildlifeSchema.virtual('notSeenByUser').get(function() {
     return !this.seenByUser;
 });
 
+// const Wildlife = model("wildlife", wildlifeSchema)
+
 module.exports = wildlifeSchema;

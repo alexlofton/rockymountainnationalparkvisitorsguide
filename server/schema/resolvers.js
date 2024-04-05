@@ -1,6 +1,9 @@
 const { AuthenticationError } = require("apollo-server-express");
-const { User, Trail } = require("../models");
+const { User } = require("../models");
+const { wildlifeSchema } = require("../models");
+const { Trail } = require("../models")
 const { signToken } = require("../utils/auth");
+const { Schema, Types, model } = require('mongoose');
 
 const resolvers = {
 Query: {
@@ -26,6 +29,16 @@ Query: {
 
     //throw new AuthenticationError("Not logged in");
     },
+
+    getAllWildLife: async (parent, arg, context) => {
+        if (context.user) {
+            const wildlifeData = await Wildlife.find({});
+
+            return wildlifeData
+        }
+
+      
+    }
 },
 
 Mutation: {
@@ -35,6 +48,12 @@ Mutation: {
 
     return { token, user };
     },
+
+    // addWildlife: async (parent, args) => {
+    // const newWildlife = await wildlifeSchema.create(args);
+
+    // return { newWildlife }
+    // },
 
     login: async (parent, { username, password }) => {
     const user = await User.findOne({ username });
