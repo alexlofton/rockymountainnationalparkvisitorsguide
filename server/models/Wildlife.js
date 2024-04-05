@@ -1,11 +1,12 @@
 const { Schema, Types, model } = require('mongoose');
+const mongoose = require('mongoose');
 
 const wildlifeSchema = new Schema(
     {
         name: {
             type: String
         },
-        scientificName: {
+        scientificname: {
             String
         },
         description: {
@@ -14,10 +15,6 @@ const wildlifeSchema = new Schema(
         image: {
             type: String
         },
-        seenByUser: {
-            type: Boolean,
-            default: false
-        }
     },
 
     {
@@ -27,10 +24,6 @@ const wildlifeSchema = new Schema(
     }
 );
 
-wildlifeSchema.virtual('notSeenByUser').get(function() {
-    return !this.seenByUser;
-});
+const Wildlife = model("Wildlife", wildlifeSchema)
 
-// const Wildlife = model("wildlife", wildlifeSchema)
-
-module.exports = wildlifeSchema;
+module.exports = Wildlife;

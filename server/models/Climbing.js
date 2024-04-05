@@ -8,17 +8,12 @@ const climbingSchema = new Schema(
         name: {
             type: String
         },
-
         description: {
             type: String
-        },
-        difficulty: {
-            type: Number
         },
         image: {
             type: String
         },
-        trail: [trailSchema],
         comments: [commentSchema]
     },
 
@@ -30,6 +25,6 @@ const climbingSchema = new Schema(
     }
 );
 
-// const Climbing = model("climbing", climbingSchema)
+const Climbing = model("climbing", climbingSchema)
 
-module.exports = climbingSchema; 
+module.exports = Climbing; 

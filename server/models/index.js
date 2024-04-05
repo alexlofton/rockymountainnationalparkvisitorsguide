@@ -1,6 +1,6 @@
 const User = require('./User');
-const wildlifeSchema = require("./Wildlife");
+const Wildlife = require("./Wildlife");
 const Trail = require("./Trail");
 const Climbing = require("./Climbing");
 
-module.exports = { User, wildlifeSchema, Climbing, Trail };
+module.exports = { User, Wildlife, Climbing, Trail };
