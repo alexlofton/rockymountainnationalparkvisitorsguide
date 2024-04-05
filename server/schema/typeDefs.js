@@ -28,6 +28,7 @@ const typeDefs = gql`
     }
 
     input TrailInput {
+        _id: String
         name: String
         description: String
         weather: String
@@ -73,7 +74,7 @@ const typeDefs = gql`
 
     type Query {
         me: User
-        allTrails: Trail
+        allTrails: [Trail]
     }
     
     type Mutation {
@@ -82,6 +83,7 @@ const typeDefs = gql`
         saveTrail(trailData: TrailInput):User
         removeTrail(trailId: String):User
         completeTrail(completeData: CompletedTrailInput):User
+
     }
 `
 

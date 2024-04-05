@@ -1,6 +1,6 @@
 const { Schema, types, model } = require('mongoose');
 const commentSchema = require("./Comment")
-const trailSchema = require("./Trail")
+const Trail = require("./Trail")
 
 const climbingSchema = new Schema(
     {
@@ -18,7 +18,7 @@ const climbingSchema = new Schema(
         image: {
             type: String
         },
-        trail: [trailSchema],
+        trail: [Trail],
         comments: [commentSchema]
     },
 

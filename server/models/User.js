@@ -17,7 +17,7 @@ const userSchema = new Schema(
     required: true,
     },
     
-    trails: [trailSchema],// wishlist
+    trails: [{type: Schema.Types.ObjectId, ref: "trail"}],// wishlist
     completedTrails: [completedTrailSchema], // strings that will receive mapped names from Trail model and complete date from datepicker
     wildlife: [wildlifeSchema],
     //comments: [commentSchema]

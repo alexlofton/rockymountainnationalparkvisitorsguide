@@ -30,15 +30,15 @@ Query: {
     //throw new AuthenticationError("Not logged in");
     },
 
-    getAllWildLife: async (parent, arg, context) => {
-        if (context.user) {
-            const wildlifeData = await Wildlife.find({});
+    // getAllWildLife: async (parent, arg, context) => {
+    //     if (context.user) {
+    //         const wildlifeData = await Wildlife.find({});
 
-            return wildlifeData
-        }
+    //         return wildlifeData
+    //     }
 
-      
-    }
+
+    // }
 },
 
 Mutation: {
@@ -75,13 +75,13 @@ Mutation: {
     saveTrail: async (parent, { trailData }, context) => {
     //if (context.user) {
     
-        const updatedUser = await User.findByIdAndUpdate(
+        const updatedUser = await User.findOneAndUpdate(
         { _id: "660f37ffbb6e3a62e3c1be08" },
         { $push: { trails: trailData }  },
     
         { new: true }
-        );
-         console.log(updatedUser)
+        ).populate("trails");
+        console.log(updatedUser)
         return updatedUser;
    //}
 
@@ -104,8 +104,8 @@ Mutation: {
 
     completeTrail: async (parent, { completeData }, context) => {
        // if (context.user) {
-        const updatedUser = await User.findByIdAndUpdate(
-        { _id: "660b20a76176e8558df3d300" },
+        const updatedUser = await User.findOneAndUpdate(
+        { _id: "660f37ffbb6e3a62e3c1be08" },
         { $push: { completedTrails: completeData } },
         { new: true }
         );
@@ -119,20 +119,20 @@ Mutation: {
         // remove from complete trails nice to have reference removeTrail
 
 
-        // comment
-        addComment: async (parent, {commentData}, context) => {
-           // if (context.user) {
-                const updatedTrail = await Trail.findByIdAndUpdate(
-                { _id: "660c8cc2a94b4f9751227839" },
-                { $push: { comments: commentData } },
-                { new: true }
-                );
+//         // comment
+//         addComment: async (parent, {commentData}, context) => {
+//            // if (context.user) {
+//                 const updatedTrail = await Trail.findByIdAndUpdate(
+//                 { _id: "660c8cc2a94b4f9751227839" },
+//                 { $push: { comments: commentData } },
+//                 { new: true }
+//                 );
                 
-                //return updatedTrail;
-                //}
+//                 //return updatedTrail;
+//                 //}
                 
-        //throw new AuthenticationError('You need to be logged in!');
-        }
+//         //throw new AuthenticationError('You need to be logged in!');
+//         }
     },
 };
 
