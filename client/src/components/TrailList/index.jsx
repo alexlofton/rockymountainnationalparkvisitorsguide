@@ -10,6 +10,8 @@ import {
     GridItem
 } from '@chakra-ui/react'
 
+import { Link } from 'react-router-dom'
+
 
 const TrailList = ({ trails }) => {
     // if (blah) {
@@ -22,24 +24,24 @@ const TrailList = ({ trails }) => {
                     trails.map((trail) => (
                         <AccordionItem key={trail._id} className='accItem'>
                             <AccordionButton className='accBtn'>
-                                    <Grid templateColumns="repeat(2, 1fr)" w="100%">
-                                        <GridItem className='trailGitem' textAlign='left'>
-                                            {trail.name}
-                                        </GridItem>
-                                        <GridItem className='trailGitem' textAlign='right'>
-                                            {trail.length}
-                                        </GridItem>
-                                    </Grid>
+                                <Grid templateColumns="repeat(2, 1fr)" w="100%">
+                                    <GridItem className='trailGitem' textAlign='left'>
+                                        {trail.name}
+                                    </GridItem>
+                                    <GridItem className='trailGitem' textAlign='right'>
+                                        {trail.length}
+                                    </GridItem>
+                                </Grid>
                                 <AccordionIcon />
                             </AccordionButton>
                             <AccordionPanel className='accPanel'>
                                 <p>
-                                {trail.description}
+                                    {trail.description}
                                 </p>
                                 <div className='btnDiv'>
-                                <button className='accPanBtn'>
-                                    FULL PAGE
-                                </button>
+                                    <Link className='accPanBtn' to={`/Trails/${trail._id}`}>
+                                        FULL PAGE
+                                    </Link>
                                 </div>
                                 <img src={trail.image} alt="" />
                             </AccordionPanel>

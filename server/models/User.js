@@ -3,7 +3,9 @@ const bcrypt = require('bcrypt');
 const Trail = require('./Trail');
 const wildlifeSchema = require('./Wildlife');
 //const commentSchema = require('./Comment');
-const completedTrailSchema = require("./completedTrail.js")
+// const completedTrailSchema = require("./completedTrail.js");
+const Wildlife = require('./Wildlife');
+const Climbing = require('./Climbing')
 
 const userSchema = new Schema(
 {

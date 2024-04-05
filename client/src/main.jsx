@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.jsx';
 import Home from './pages/Home';
 import Trails from './pages/Trails.jsx';
+import SingleTrail from './pages/SingleTrail.jsx';
 import Wildlife from './pages/Wildlife.jsx';
 import VisitorAmeneties from './components/Visitor-Amenities/VisitorAmenenties.jsx';
 import NotFound from './pages/NotFound';
@@ -21,19 +22,23 @@ const router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: 'Trails',
+                path: '/Trails',
                 element: <Trails />
             },
             {
-                path: 'Wildlife',
+                path: '/Trails/:trailId',
+                element: <SingleTrail />
+            },
+            {
+                path: '/Wildlife',
                 element: <Wildlife />
             },
             {
-                path: 'VisitorAmenities',
+                path: '/VisitorAmenities',
                 element: <VisitorAmeneties />
             },
             {
-                path: 'Profile',
+                path: '/Profile',
                 element: <Profile />
             }
         ],

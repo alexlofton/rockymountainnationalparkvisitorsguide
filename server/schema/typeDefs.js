@@ -8,24 +8,25 @@ const typeDefs = gql`
         trails: [Trail]
         completedTrails: [CompletedTrail]
     }
-
+    
     type Wildlife {
         _id: ID
         name: String
-        scientificName: String
         description: String
         image: String
-        seenByUser: Boolean
     }
 
     type Trail {
         _id: ID
+        trailId: ID
         name: String
         description: String
         weather: String
-        image: String
+        image: String,
         comments: [Comment]
     }
+    
+
 
     input TrailInput {
         _id: String
@@ -36,12 +37,6 @@ const typeDefs = gql`
         comments: CommentInput
     }
 
-    input WildlifeInput {
-        name: String!
-        scientificName: String!
-        description: String!
-        image: String
-    }
 
     type CompletedTrail {
         trailName: String,
@@ -71,6 +66,7 @@ const typeDefs = gql`
         token: ID
         user: User
     }
+
 
     type Query {
         me: User

@@ -7,7 +7,7 @@ function WildlifePage() {
     {
       id: 1,
       name: 'TEST',
-      scientificName: 'TEST TEST',
+      scientificname: 'TEST TEST',
       imageSrc: 'TEST.jpg',
       description: 'This is only a test',
       seen: false
@@ -15,7 +15,7 @@ function WildlifePage() {
     {
       id: 2,
       name: 'Cat',
-      scientificName: 'CAT TEST',
+      scientificname: 'CAT TEST',
       imageSrc: 'cat.jpg',
       description: 'Cat',
       seen: false
@@ -43,7 +43,7 @@ function WildlifePage() {
         <WildlifeComponent
           key={wildlife.id}
           name={wildlife.name}
-          scientificName={wildlife.scientificName}
+          scientificname={wildlife.scientificname}
           imageSrc={wildlife.imageSrc}
           description={wildlife.description}
           seen={wildlife.seen}
