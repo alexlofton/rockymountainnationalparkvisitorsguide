@@ -1,9 +1,11 @@
 const { AuthenticationError } = require("apollo-server-express");
 const { User } = require("../models");
-const { wildlifeSchema } = require("../models");
-const { Trail } = require("../models")
+const { Wildlife } = require("../models");
+const { Trail } = require("../models");
+const { Climbing } = require("../models")
 const { signToken } = require("../utils/auth");
 const { Schema, Types, model } = require('mongoose');
+const { FormErrorIcon } = require("@chakra-ui/react");
 
 const resolvers = {
 Query: {
@@ -11,7 +13,7 @@ Query: {
     if (context.user) {
         const userData = await User.findOne({ _id: context.user._id })
         .select("-__v -password")
-        .populate("trails");
+        // .populate("trails");
 
         return userData;
     }
@@ -35,8 +37,15 @@ Query: {
 
             return wildlifeData
         }
-
       
+    },
+
+    allClimbing: async (parent, arg, context) => {
+        if (context.user) {
+            const climbingData = await Climbing.find({});
+
+            return climbingData
+        }
     }
 },
 

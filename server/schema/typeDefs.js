@@ -8,14 +8,12 @@ const typeDefs = gql`
         trails: [Trail]
         completedTrails: [CompletedTrail]
     }
-
+    
     type Wildlife {
         _id: ID
         name: String
-        scientificName: String
         description: String
         image: String
-        seenByUser: Boolean
     }
 
     type Trail {
@@ -26,6 +24,13 @@ const typeDefs = gql`
         image: String,
         comments: [Comment]
     }
+    
+    type Climbing {
+        climbingId: ID
+        name: String
+        description: String
+        image: String
+    }
 
     input TrailInput {
         trailId: ID
@@ -35,12 +40,6 @@ const typeDefs = gql`
         image: String
     }
 
-    input WildlifeInput {
-        name: String!
-        scientificName: String!
-        description: String!
-        image: String
-    }
 
     type CompletedTrail {
         trailName: String,
@@ -71,10 +70,12 @@ const typeDefs = gql`
         user: User
     }
 
+
     type Query {
         me: User
-        allTrails: Trail
-        getAllWildLife: Wildlife
+        allTrails: [Trail]
+        getAllWildLife: [Wildlife]
+        allClimbing: [Climbing]
     }
     
     type Mutation {
@@ -83,7 +84,6 @@ const typeDefs = gql`
         saveTrail(trailData: TrailInput):User
         removeTrail(trailId: ID):User
         completeTrail(completeData: CompletedTrailInput):User
-        addWildlife(wildlifeData: WildlifeInput!):Wildlife
     }
 
    
