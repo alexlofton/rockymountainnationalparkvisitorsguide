@@ -1,13 +1,14 @@
 
 import * as React from 'react'
 import './App.css';
-import { Outlet } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
-import Header from './components/Header';
-
-import Footer from './components/Footer/Footer'; //Added footer component
 
 import { ChakraProvider } from '@chakra-ui/react' // Imports Chakra UI
+
+import { Outlet } from 'react-router-dom';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar/index';
+import Footer from './components/Footer/Footer'; //Added footer component
 
 const client = new ApolloClient({
     uri: '/graphql',
@@ -18,17 +19,18 @@ const client = new ApolloClient({
 
 function App() {
     return (
-
-        <ChakraProvider>
-            <ApolloProvider client={client}>
-                <div className="">
-                    <Header />
+     <ChakraProvider> 
+       <ApolloProvider client={client}>
+            <>
+                <Header />
+                <Sidebar />
+                <main>
                     <Outlet />
-                    <Footer />
-                    {/* <RMNP /> */}
-                </div>
-            </ApolloProvider>
-        </ChakraProvider>
+                </main>
+                <Footer /> 
+            </>
+        </ApolloProvider>
+     </ChakraProvider>
     );
 }
 

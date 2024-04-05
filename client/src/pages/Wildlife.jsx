@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Heading } from '@chakra-ui/react';
-import WildlifeComponent from '../components/Wildlife';
+import WildlifeComponent from '../components/Wildlife/WildlifeComponent';
 
 function WildlifePage() {
   const [wildlifeList, setWildlifeList] = useState([
@@ -9,7 +9,6 @@ function WildlifePage() {
       name: 'TEST',
       scientificName: 'TEST TEST',
       imageSrc: 'TEST.jpg',
-    
       description: 'This is only a test',
       seen: false
     },
@@ -46,7 +45,6 @@ function WildlifePage() {
           name={wildlife.name}
           scientificName={wildlife.scientificName}
           imageSrc={wildlife.imageSrc}
-          season={wildlife.season}
           description={wildlife.description}
           seen={wildlife.seen}
           onCheckboxChange={() => handleCheckboxChange(wildlife.id)}
@@ -57,3 +55,4 @@ function WildlifePage() {
 }
 
 export default WildlifePage;
+
