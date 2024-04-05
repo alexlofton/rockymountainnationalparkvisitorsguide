@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Fern Lake",
+        "description": "Large boulders to climb at Fern Lake. 3.9 Miles from Trailhead.",
+        "location": "40.33698, -105.67651",
+        "image": "./client/src/assets/animals/fernlake.jpg",
+        "trail": ""
+    },
+    {
+        "name": "Chaos Canyon",
+        "description": "An iconic bouldering location, this has something for everyone. With an abundance of high, steep walls and overhangs, it is well worth the 3 mile hike from the trailhead.",
+        "location": "40.30491, -105.66457",
+        "image": "./client/src/assets/animals/chaos.jpg",
+        "trail": "Nymph Lake"
+    },
+    {
+        "name": "Gem Lake Wall",
+        "description": "Wide swath of granite east of Gem Lake. Accessible from Black Canyon trail by way of Lumpy Ridge trailhead.",
+        "location": "40.40987, -105.50329",
+        "image": "./client/src/assets/animals/gemLake.jpg",
+        "trail": "Lumpy Ridge, Black Canyon"
+    },
+    {
+        "name": "Ouzel Falls Crag",
+        "description": "Toproped crag with amazing views.",
+        "location": "40.69259, -105.34507",
+        "image": "./client/src/assets/animals/OuzelFalls.jpg",
+        "trail": "Ouzel Falls"
+    },
+    {
+        "name": "Deer Mountain Buttress",
+        "description": "A high and lonely 600' cliff, this face provides excellent views and the granite is perfect for climbing.",
+        "location": "40.379, -105.5892",
+        "image": "./client/src/assets/animals/deerMountain.jpg",
+        "trail": "Deer Mountain"
+    },
+    {
+        "name": "Copeland Falls Boulder",
+        "description": "An intermediate boulder experience near the lower Copeland Falls. ",
+        "location": "40.2048, -105.57096",
+        "image": "./client/src/assets/animals/copeland.jpg",
+        "trail": "Wild Basin"
+    },
+    {
+        "name": "Bierstadt Rock",
+        "description": "A great starter are, this zone overlooking Bierstadt lake includes easier scrambles up rocks as well as some more challenging highballs.",
+        "location": "39.6326, -105.6211",
+        "image": "./client/src/assets/animals/bierstadt.jpg",
+        "trail": "Chicago Lakes"
+    },
+    {
+        "name": "Twin Owls",
+        "description": "A fairly iconic and aptly named rock, there are many difficult climbs here, as well as some more manageable ones on satellite crags surrounding the main formation.",
+        "location": "40.4029, -105.5188",
+        "image": "./client/src/assets/animals/twinOwls.jpg",
+        "trail": "Lumpy Ridge"
+    },
+    {
+        "name": "Notchtop",
+        "description": "This spectacular mountain offers climbing experiences highly advanced adventurers. The climbs as well we as the descents can be confusing and dangerous, caution is advised.",
+        "location": "40.3186, -105.694",
+        "image": "./client/src/assets/animals/notchtop.jpg",
+        "trail": "Bear Lake"
+    },
+    {
+        "name": "Cathedral Wall",
+        "description": "The face of this mountain is impossible to miss on your walk toward Sky Pond, especially in the morning when the rising sun bathes it in a beautiful golden hue. Another advanced endeavour, this mountain has perhaps a dozen routes to the top.",
+        "location": "40.2874, -105.66821",
+        "image": "./client/src/assets/animals/cathedral.jpg",
+        "trail": "Sky Pond"
+    }
+]

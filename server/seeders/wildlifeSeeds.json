@@ -37,8 +37,8 @@
     },
     {
         "name": "Mountain Chickadee",
-        "scientificName": "",
-        "description": "The mountain chickadee flits among the branches, bringing a touch of charm and vitality to the alpine landscape. With its distinctive black cap, white cheeks, and cheerful song, this small but spirited bird brings joy to all who encounter its cheerful presence.",
+        "scientificName": "Poecile gambeli",
+        "description": "The mountain chickadee flits among the branches, bringing a touch of charm and vitality to the alpine landscape. With its distinctive black cap, white cheeks, and cheerful song, this small but spirited bird brings joy to all who encounter its brilliant presence.",
         "image": "./client/src/assets/animals/chickadee.jpg" 
     },
     {
