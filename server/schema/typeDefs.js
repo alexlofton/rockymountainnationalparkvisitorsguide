@@ -10,20 +10,20 @@ const typeDefs = gql`
     }
 
     type Trail {
-        trailId: ID
-        name: String
-        description: String
-        weather: String
-        image: String,
-        comments: [Comment]
-    }
-
-    input TrailInput {
-        trailId: ID
+        _id: ID
         name: String
         description: String
         weather: String
         image: String
+        comments: [Comment]
+    }
+
+    input TrailInput {
+        name: String
+        description: String
+        weather: String
+        image: String
+        comments: CommentInput
     }
 
     type CompletedTrail {
@@ -57,18 +57,17 @@ const typeDefs = gql`
 
     type Query {
         me: User
-        allTrails: Trail
+        allTrails: [Trail]
     }
     
     type Mutation {
         login(username: String, password: String):Auth
         addUser(username: String, password: String):Auth
         saveTrail(trailData: TrailInput):User
-        removeTrail(trailId: ID):User
+        removeTrail(trailId: String):User
         completeTrail(completeData: CompletedTrailInput):User
+        addComment(commentData: CommentInput): Trail
     }
-
-   
 `
 
 module.exports = typeDefs;

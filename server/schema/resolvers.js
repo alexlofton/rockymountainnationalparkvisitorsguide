@@ -1,5 +1,5 @@
 const { AuthenticationError } = require("apollo-server-express");
-const { User } = require("../models");
+const { User, Trail } = require("../models");
 const { signToken } = require("../utils/auth");
 
 const resolvers = {
@@ -17,13 +17,14 @@ Query: {
     },
     // need queries for Trails
     allTrails: async (parent, args, context) => {
-    if (context.user) {
-        const trailData = await Trail.find({});
-
+    //if (context.user) {
+        console.log("hit here")
+        const trailData = await Trail.find();
+        console.log(trailData)
         return trailData;
-    }
+   // }
 
-    throw new AuthenticationError("Not logged in");
+    //throw new AuthenticationError("Not logged in");
     },
 },
 
@@ -53,21 +54,23 @@ Mutation: {
     },
 
     saveTrail: async (parent, { trailData }, context) => {
-    if (context.user) {
+    //if (context.user) {
+    
         const updatedUser = await User.findByIdAndUpdate(
-        { _id: context.user._id },
-        { $push: { trails: trailData } },
+        { _id: "660f37ffbb6e3a62e3c1be08" },
+        { $push: { trails: trailData }  },
+    
         { new: true }
         );
-
+         console.log(updatedUser)
         return updatedUser;
-    }
+   //}
 
-    throw new AuthenticationError("You need to be logged in!");
+   //throw new AuthenticationError("You need to be logged in!");
     },
 
     removeTrail: async (parent, { trailId }, context) => {
-    if (context.user) {
+    //if (context.user) {
         const updatedUser = await User.findOneAndUpdate(
         { _id: context.user._id },
         { $pull: { trails: { trailId } } },
@@ -75,30 +78,42 @@ Mutation: {
         );
 
         return updatedUser;
-    }
+    //}
 
-    throw new AuthenticationError("You need to be logged in!");
+    //throw new AuthenticationError("You need to be logged in!");
     },
 
     completeTrail: async (parent, { completeData }, context) => {
-        if (context.user) {
+       // if (context.user) {
         const updatedUser = await User.findByIdAndUpdate(
-        { _id: context.user._id },
+        { _id: "660b20a76176e8558df3d300" },
         { $push: { completedTrails: completeData } },
         { new: true }
         );
         
         return updatedUser;
-        }
+        //}
         
-        throw new AuthenticationError('You need to be logged in!');
+        //throw new AuthenticationError('You need to be logged in!');
         },
 
         // remove from complete trails nice to have reference removeTrail
 
 
         // comment
-
+        addComment: async (parent, {commentData}, context) => {
+           // if (context.user) {
+                const updatedTrail = await Trail.findByIdAndUpdate(
+                { _id: "660c8cc2a94b4f9751227839" },
+                { $push: { comments: commentData } },
+                { new: true }
+                );
+                
+                //return updatedTrail;
+                //}
+                
+        //throw new AuthenticationError('You need to be logged in!');
+        }
     },
 };
 

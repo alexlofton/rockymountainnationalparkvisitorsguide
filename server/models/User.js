@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
-const trailSchema = require('./Trail');
+const Trail = require('./Trail');
 const wildlifeSchema = require('./Wildlife');
 //const commentSchema = require('./Comment');
 const completedTrailSchema = require("./completedTrail.js")

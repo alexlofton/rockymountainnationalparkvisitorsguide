@@ -3,8 +3,11 @@ const commentSchema = require("./Comment")
 
 const trailSchema = new Schema(
 {
-
+ 
     name: {
+        type: String
+    },
+    weather: {
         type: String
     },
     description: {
@@ -26,7 +29,6 @@ const trailSchema = new Schema(
     },
 }
 );
-
-const Trail = model("trail", trailSchema)
+ const Trail = model("trail", trailSchema)
 
 module.exports = Trail;
