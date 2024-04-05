@@ -7,6 +7,9 @@ const trailSchema = new Schema(
     name: {
         type: String
     },
+    weather: {
+        type: String
+    },
     description: {
         type: String
     },
