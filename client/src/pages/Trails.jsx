@@ -8,7 +8,7 @@ import dummyTrailData from '../../dummyData/dumTrails.json';
 const Trails = () => {
     console.log(dummyTrailData)
     return (
-        <div>
+        <div className="w100">
             {/* <input type="text" /> */}
             <TrailList key={1} trails={dummyTrailData}/>
         </div>
