@@ -121,17 +121,18 @@ throw new AuthenticationError("You need to be logged in!");
 
 //         // comment
         addComment: async (parent, {commentData}, context) => {
-           // if (context.user) {
+            if (context.user) {
                 const updatedTrail = await Trail.findByIdAndUpdate(
-                { _id: "660f3634dee23daa606a4551" },
+                { _id: trail._id },
                 { $push: { comments: commentData } },
                 { new: true }
                 );
+                console.log(updatedTrail)
                 
                 return updatedTrail;
+                }    
                 
-                
-        //throw new AuthenticationError('You need to be logged in!');
+        throw new AuthenticationError('You need to be logged in!');
         }
     },
 };
