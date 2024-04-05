@@ -1,14 +1,15 @@
 const db = require('../config/connection');
-const { Wildlife
+const { wildlifeSchema
     // , Trail, Climbing, User,
  } = require('../models');
-const wildlifeSeeds = require('./wildlifeSeeds.json')
+const wildlifeSeeds = require('../seeders/wildlifeSeeds.json')
+const cleanDB = require('./cleanDB')
 
 db.once('open', async () => {
     try {
         await cleanDB('Wildlife', 'wildlives')
 
-        await Wildlife.create(wildlifeSeeds);
+        await wildlifeSchema.create(wildlifeSeeds);
 
         console.log('seeds do be seeded');
         process.exit(0);
