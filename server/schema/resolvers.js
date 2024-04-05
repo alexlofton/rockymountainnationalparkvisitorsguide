@@ -73,23 +73,23 @@ Mutation: {
     },
 
     saveTrail: async (parent, { trailData }, context) => {
-    //if (context.user) {
+    if (context.user) {
     
         const updatedUser = await User.findOneAndUpdate(
-        { _id: "660f37ffbb6e3a62e3c1be08" },
+        { _id: context.user._id },
         { $push: { trails: trailData }  },
     
         { new: true }
         ).populate("trails");
         console.log(updatedUser)
         return updatedUser;
-   //}
+}
 
-   //throw new AuthenticationError("You need to be logged in!");
+throw new AuthenticationError("You need to be logged in!");
     },
 
     removeTrail: async (parent, { trailId }, context) => {
-    //if (context.user) {
+    if (context.user) {
         const updatedUser = await User.findOneAndUpdate(
         { _id: context.user._id },
         { $pull: { trails: { trailId } } },
@@ -97,42 +97,42 @@ Mutation: {
         );
 
         return updatedUser;
-    //}
+    }
 
-    //throw new AuthenticationError("You need to be logged in!");
+throw new AuthenticationError("You need to be logged in!");
     },
 
     completeTrail: async (parent, { completeData }, context) => {
-       // if (context.user) {
+       if (context.user) {
         const updatedUser = await User.findOneAndUpdate(
-        { _id: "660f37ffbb6e3a62e3c1be08" },
+        { _id: context.user._id },
         { $push: { completedTrails: completeData } },
         { new: true }
         );
         
         return updatedUser;
-        //}
+        }
         
-        //throw new AuthenticationError('You need to be logged in!');
+    throw new AuthenticationError('You need to be logged in!');
         },
 
         // remove from complete trails nice to have reference removeTrail
 
 
 //         // comment
-//         addComment: async (parent, {commentData}, context) => {
-//            // if (context.user) {
-//                 const updatedTrail = await Trail.findByIdAndUpdate(
-//                 { _id: "660c8cc2a94b4f9751227839" },
-//                 { $push: { comments: commentData } },
-//                 { new: true }
-//                 );
+        addComment: async (parent, {commentData}, context) => {
+           // if (context.user) {
+                const updatedTrail = await Trail.findByIdAndUpdate(
+                { _id: "660f3634dee23daa606a4551" },
+                { $push: { comments: commentData } },
+                { new: true }
+                );
                 
-//                 //return updatedTrail;
-//                 //}
+                return updatedTrail;
                 
-//         //throw new AuthenticationError('You need to be logged in!');
-//         }
+                
+        //throw new AuthenticationError('You need to be logged in!');
+        }
     },
 };
 

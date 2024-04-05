@@ -83,6 +83,7 @@ const typeDefs = gql`
         saveTrail(trailData: TrailInput):User
         removeTrail(trailId: String):User
         completeTrail(completeData: CompletedTrailInput):User
+        addComment(commentData: CommentInput): Trail
 
     }
 `
