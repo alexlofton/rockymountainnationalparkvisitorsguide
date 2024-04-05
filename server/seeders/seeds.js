@@ -7,13 +7,14 @@ const cleanDB = require('./cleanDB')
 
 db.once('open', async () => {
     try {
-        await cleanDB('Wildlife', 'wildlives')
+        await cleanDB('wildlifeSchema', 'wildlives')
 
         await wildlifeSchema.create(wildlifeSeeds);
 
-        console.log('seeds do be seeded');
+        console.log('seeds seeded');
         process.exit(0);
     } catch (err) {
-
+        console.error("error during seeding:", err);
+        process.exit(1);
     }
 })
