@@ -20,7 +20,6 @@ const LoginForm = () => {
     try {
       const { data } = await login({ variables: { ...userFormData } });
     //   Auth.login(data.login.token);
-      // On successful login, you might want to use a toast for success feedback
       toast({
         title: "Login successful.",
         description: "You've been logged in.",
@@ -31,7 +30,6 @@ const LoginForm = () => {
     } catch (err) {
       console.error(err);
       setShowAlert(true);
-      // On error, use a toast to show error feedback
       toast({
         title: "An error occurred.",
         description: error ? error.message : "Unable to login, please try again.",
