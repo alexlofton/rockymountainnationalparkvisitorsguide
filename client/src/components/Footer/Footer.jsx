@@ -7,7 +7,7 @@ function Footer() {
                 <ul className="footer-list">
                     <li><Link to="/trails">Trails &#129406;</Link></li>
                     <li><Link to="/wildlife">Wildlife &#128017;</Link></li>
-                    <li><Link to="/visitor-amenities">Visitor Amenities &#127957;</Link></li>
+                    <li><Link to="/visitorAmenities">Visitor Amenities &#127957;</Link></li>
                     <li><Link to="/donate">Click to Donate! &#128178;</Link></li>
                 </ul>
             </nav>
