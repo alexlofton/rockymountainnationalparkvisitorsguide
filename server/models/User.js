@@ -1,9 +1,11 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
-const trailSchema = require('./Trail');
+const Trail = require('./Trail');
 const wildlifeSchema = require('./Wildlife');
 //const commentSchema = require('./Comment');
-const completedTrailSchema = require("./completedTrail.js")
+// const completedTrailSchema = require("./completedTrail.js");
+const Wildlife = require('./Wildlife');
+const Climbing = require('./Climbing')
 
 const userSchema = new Schema(
 {
@@ -17,12 +19,9 @@ const userSchema = new Schema(
     required: true,
     },
     
-    trails: [{
-        type: Schema.Types.ObjectId,
-        ref: "trail"
-    }], // wishlist
+    trails: [{type: Schema.Types.ObjectId, ref: "trail"}],// wishlist
     completedTrails: [completedTrailSchema], // strings that will receive mapped names from Trail model and complete date from datepicker
-
+    wildlife: [wildlifeSchema],
     //comments: [commentSchema]
 },
 

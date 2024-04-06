@@ -1,62 +1,51 @@
 [
     {
         "name": "Black Bear",
-        "scientificName": "Ursus americanus",
         "description": "In the majestic landscape of Rocky Mountain National Park, the black bear roams as a symbol of wilderness and resilience.  Its keen senses and powerful physique enable it to navigate the rugged slopes and dense forests with ease.",
         "image": "./client/src/assets/animals/bear.jpg"
     },
     {
         "name": "Moose",
-        "scientificName": "Alces alces",
         "description": " Towering above the landscape with its massive frame and impressive antlers, the moose commands attention and respect. Often found grazing in meadows or wading through mountain lakes and streams, this magnificent creature is perfectly adapted to its natural habitat.",
         "image": "./client/src/assets/animals/moose.jpg" 
     },
     {
         "name": "Mule Deer",
-        "scientificName": "Odocoileus hemionus",
         "description": "The mule deer gracefully roams through this enchanting realm, epitomizing the elegance and resilience of the high country. With its slender form and distinctive mule-like ears, this iconic creature adds a touch of grace to the rugged landscape.",
         "image": "./client/src/assets/animals/muledeer.jpg" 
     },
     {
         "name": "Bighorn sheep",
-        "scientificName": "Ovis canadensis",
         "description": "The bighorn sheep commands attention with its imposing presence and rugged beauty. With its magnificent curved horns and rugged, muscular build, this iconic creature embodies a spirit of mastery in this alpine wilderness.",
         "image": "./client/src/assets/animals/bighornsheep.jpg" 
     },
     {
         "name": "Bobcat",
-        "scientificName": "Lynx rufus",
         "description": "The Bobcat's thick fur serves as insulation against the biting cold of the mountain environment, while its large paws act as snowshoes, allowing it to traverse the deep snowdrifts that blanket the landscape. With stealthy movements and acute senses, the bobcat is a master of hunting in the dense forests and snowy expanses.",
         "image": "./client/src/assets/animals/bobcat.jpg" 
     },
     {
         "name": "Golden Eagle",
-        "scientificName": "Aquila chrysaetos",
         "description": "The Golden Eagle soars above this vast expanse as a symbol of freedom and majesty. With its impressive wingspan, golden plumage, and piercing eyes, this iconic raptor commands the skies with effortless grace and power.",
         "image": "./client/src/assets/animals/goldeneagle.jpg" 
     },
     {
         "name": "Mountain Chickadee",
-        "scientificName": "Poecile gambeli",
-        "description": "The mountain chickadee flits among the branches, bringing a touch of charm and vitality to the alpine landscape. With its distinctive black cap, white cheeks, and cheerful song, this small but spirited bird brings joy to all who encounter its cheerful presence.",
+        "description": "The mountain chickadee flits among the branches, bringing a touch of charm and vitality to the alpine landscape. With its distinctive black cap, white cheeks, and cheerful song, this small but spirited bird brings joy to all who encounter its brilliant presence.",
         "image": "./client/src/assets/animals/chickadee.jpg" 
     },
     {
         "name": "Red Fox",
-        "scientificName": "Vulpes vulpes",
         "description": "With it's fiery red coat and bushy tail, this cunning predator brings even more vibrancy to this beauitul environment. A nimble and stealthy hunter, this charismatic creature is a symbol of wild beauty and untamed spirit.",
         "image": "./client/src/assets/animals/redfox.jpg" 
     },
     {
         "name": "Elk",
-        "scientificName": "Cervus canadensis",
         "description": "With its towering antlers and rich brown coat, the Elk roams with strength and grandeur. Mostly seen in herds, this iconic species commands the attention of all lucky enough to encounter it. ",
-        "season": "",
         "image": "./client/src/assets/animals/elk.jpg" 
     },
     {
         "name": "Coyote",
-        "scientificName": "Canis latrans",
         "description": "The resourceful coyote is a skilled hunter and scavenger, it is a true master of survival. Seeing its elusive form darting through the underbrush or listening to its haunting calls echoing across the landscape, encountering this predator is a reminder of the untamed beauty and wild splendor of the natural world.",
         "image": "./client/src/assets/animals/coyote.jpg" 
     }

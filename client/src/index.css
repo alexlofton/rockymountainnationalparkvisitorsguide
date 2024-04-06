@@ -3,27 +3,45 @@
     src: url('./assets/RusticAndBeautiful.otf') format("opentype");
 }
 
-*{
+:root {
+    --darkGreen: #1b430b;
+    --l1: #8A723D;
+    --lTan: rgb(138, 114, 61);
+    --Dtan: rgba(91, 73, 35, 1)
+}
+
+* {
     padding: 0%;
     margin: 0%;
 }
 
-.bkgImg{
+.cusTanBkg {
+    background: rgb(91,73,35);
+    background: linear-gradient(90deg, rgba(91,73,35,1) 0%, rgba(138,114,61,1) 50%, rgba(91,73,35,1) 100%); 
+}
+
+.w100 {
     width: 100%;
-    height: 100vh;
+}
+
+/* main backgoun image stuff */
+.bkgImg {
+    width: 100%;
+    /* height: 100vh; */
     background-position: center;
     background-size: cover;
     background-image: url(./assets/Mountains.jpg);
 }
 
-.imgOverlay{
+.imgOverlay {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: rgba(234, 193, 71, 0.5);
 }
 
+/* Header */
 .headR {
-    background-color: #1b430b;
+    background-color: var(--darkGreen);
     color: white;
 }
 
@@ -33,10 +51,12 @@
     margin-left: 1.5rem;
 }
 
+
+/* Footer styles */
 .footer {
-    background-color: #1b430b;
+    background-color: var(--darkGreen);
     color: white;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -45,30 +65,88 @@
 }
 
 
-/* Footer styles */
 .footer-list {
-    list-style-type: none; 
-    display: flex; 
-    justify-content: space-between; 
-    padding: 0; 
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .footer-list li {
-    margin-right: 20px; 
+    margin-right: 20px;
     cursor: pointer;
 }
 
 .footer-list li:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 .footer-list li:last-child {
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 .footer-text {
     text-align: center;
-    font-weight: bold; 
+    font-weight: bold;
+
+}
+
+/* trails Accordian styling */
+.accItem {
+    border: 1px solid #00000000 !important;
+    border-left: 0;
+    border-right: 0;
+}
+
+.accBtn {
+    background: rgb(138, 114, 61);
+    background: radial-gradient(circle, rgba(138, 114, 61, 1) 0%, rgba(91, 73, 35, 1) 100%);
+    color: white;
+    border: none;
+}
+
+.accItem:hover {
+    background-color: rgba(91, 73, 35, 1);
+}
+
+.accPanel {
+    background-color: rgb(138, 114, 61);
+}
+/* .accPanel p */
+.accPanBtn {
+    margin-bottom: 1rem;
+    color: rgb(63, 50, 22);
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    border-radius: 5px;
+    font-size: smaller;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.accPanBtn:hover {
+    background-color: rgba(91, 73, 35, 1);
+    color: white;
     
+}
+
+.btnDiv {
+    display: flex;
+    justify-content: end;
+}
+
+/* Single object */
+.sTitle {
+    background-color: var(--darkGreen);
+    color: white;
+}
+
+.sBod {
+    background-color: var(--l1);
+}
+
+.sCon {
+    margin-right: 5rem !important;
+    margin-left: 5rem !important;
 }

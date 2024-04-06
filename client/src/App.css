@@ -3,7 +3,11 @@
 }
 
 .NavBar{
-    float: left;
+    /* float: left; */
+}
+
+.mainCont {
+    display: flex;
 }
 
 .NavItem:hover {

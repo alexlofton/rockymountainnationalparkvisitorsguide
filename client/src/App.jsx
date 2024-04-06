@@ -19,18 +19,18 @@ const client = new ApolloClient({
 
 function App() {
     return (
-     <ChakraProvider> 
-       <ApolloProvider client={client}>
-            <>
-                <Header />
-                <Sidebar />
-                <main>
-                    <Outlet />
-                </main>
-                <Footer /> 
-            </>
-        </ApolloProvider>
-     </ChakraProvider>
+        <ChakraProvider>
+            <ApolloProvider client={client}>
+                <>
+                    <Header />
+                    <div className='mainCont'>
+                    <Sidebar />
+                        <Outlet />
+                    </div>
+                    <Footer />
+                </>
+            </ApolloProvider>
+        </ChakraProvider>
     );
 }
 
