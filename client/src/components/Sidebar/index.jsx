@@ -15,7 +15,7 @@ const Sidebar = () => {
             spacing={4} 
             p={10} 
             backgroundColor="tan" 
-            w={200} height="100vh"
+            w={200} 
             className="NavBar"
             >
             <ListItem className="NavItem">

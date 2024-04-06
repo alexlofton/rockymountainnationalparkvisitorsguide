@@ -4,10 +4,11 @@
 
 .NavBar{
     /* float: left; */
+    height: auto;
 }
 
 .mainCont {
-    display: flex;
+    display: inline-flex;
 }
 
 .NavItem:hover {
@@ -17,21 +18,24 @@
 }
 
 main {
-    display: inline-block;
+    /* display: inline-block; */
     margin: 20px;
     padding-left: 15%;
 }
 
 .Homelanding {
-    font-size: 5vh;
+    font-size: 50px;
     text-align: center;
     padding: 30px;
     font-weight: bold;
+    display: block;
+    flex-direction: column;
 }
 
 .HomeDesc{
     font-size: 16px;
     padding: 30px;
+    display: block;
 }
 
 .Logo{
@@ -40,6 +44,7 @@ main {
     margin-right: auto;
     width: 450px;
     height: 400px;
+    flex-direction: column;
 }
 
 .SignupButton:hover {
@@ -55,6 +60,11 @@ main {
 }
 
 .HomeBtns{
-    display: flex;
     justify-content: center;
+    display: flex;
+}
+
+.HomeBd{
+    flex-direction: column;
+    height: 100vh;
 }
