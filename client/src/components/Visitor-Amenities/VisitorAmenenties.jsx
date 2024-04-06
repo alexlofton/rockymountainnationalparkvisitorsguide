@@ -1,45 +1,83 @@
 import React from 'react';
-import { Box, Heading, Text, Link } from '@chakra-ui/react';
+import { Box, Heading, Text, Link, UnorderedList, ListItem, Center, Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react';
 
 function VisitorsAmenities() {
     return (
-        <Box p={4}>
-            <Heading size="xl">Visitor Amenities</Heading>
+        <Center>
+            <Box maxW="xl">
+                <Card mb={8}
+                      bgImage={`linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.0)), url('https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?cs=srgb&dl=pexels-xue-guangjian-1687845.jpg&fm=jpg')`}
+                      bgSize="cover"
+                      bgPosition="center"
+                      borderRadius="md" 
+                      boxShadow="md" 
+                >
+                    <CardHeader>
+                        <Heading size="lg" color="white" as='u'>Camping</Heading>
+                    </CardHeader>
+                    <CardBody className="camping-card-body">
+                        <Text mt={2} color="white">Rocky Mountain National Park offers various camping options, including:</Text>
+                        <UnorderedList mt={2} color="white">
+                            <ListItem>Aspenglen Campground</ListItem>
+                            <ListItem>Glacier Basin Campground</ListItem>
+                            <ListItem>Longs Peak Campground</ListItem>
+                            <ListItem> Timber Creek Campground</ListItem>
+                        </UnorderedList>
+                        <Text color="white">Fees are $30/night in winter and $35/night in summer. </Text>
+                        <Text mt={2} color="white">For more information and reservations, visit the <Link href="https://www.recreation.gov/camping/campgrounds/232448" isExternal>National Park Service website</Link>.</Text>
+                    </CardBody>
+                </Card>
 
-            <Box mt={4}>
-                <Heading size="lg">Camping</Heading>
-                <Text mt={2}>Rocky Mountain National Park offers various camping options, including:</Text>
-                <ul>
-                    <li>Aspenglen Campground</li>
-                    <li>Glacier Basin Campground</li>
-                    <li>Longs Peak Campground</li>
-                    {/* Add more camping options as needed */}
-                </ul>
-                <Text mt={2}>For more information and reservations, visit the <Link href="https://www.recreation.gov/camping/campgrounds/232448" isExternal>National Park Service website</Link>.</Text>
-            </Box>
+                {/* 
+         basic camping card is done, work on styling other cards - visitor centers, fees and passes, internet  */}
 
-            <Box mt={8}>
-                <Heading size="lg">Visitor Centers</Heading>
-                <Text mt={2}>Rocky Mountain National Park has several visitor centers located throughout the park:</Text>
-                <ul>
-                    <li>Beaver Meadows Visitor Center</li>
-                    <li>Alpine Visitor Center</li>
-                    <li>... (add more visitor centers)</li>
-                </ul>
-                <Text mt={2}>Each visitor center offers exhibits, information, and ranger programs.</Text>
+            <Card mb={8}
+                      bgImage={`linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.0)), url('https://www.nps.gov/common/uploads/structured_data/1A040051-E81A-FA40-C7A5F1E24F6E78D0.jpg')`}
+                      bgSize="cover"
+                      bgPosition="center"
+                      borderRadius="md" 
+                      boxShadow="md" 
+                >
+                    <CardHeader>
+                        <Heading size="lg" color="white" as='u'>Visitor Centers</Heading>
+                    </CardHeader>
+                    <CardBody className="visitors-card-body">
+                        <Text mt={2} color="white">Rocky Mountain National Park offers various visitor center options, including:</Text>
+                        <UnorderedList mt={2} color="white">
+                            <ListItem>Beaver Meadows Visitor Center</ListItem>
+                            <ListItem>Alpine Visitor Center</ListItem>
+                            <ListItem>Lawuneeche Visitor Center</ListItem>
+                            <ListItem>Fall River Visitor Center</ListItem>
+                        </UnorderedList>
+                        <Text mt={2} color="white">For more information, visit the <Link href="https://www.nps.gov/romo/planyourvisit/visitorcenters.htm" isExternal>National Park Service website</Link>.</Text>
+                    </CardBody>
+                </Card>
+           
+                <Card mb={8}
+                      bgImage={`linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.0)), url('https://www.jellystoneofestes.com/wp-content/uploads/2016/12/rockymountain.jpg')`}
+                      bgSize="cover"
+                      bgPosition="center"
+                      borderRadius="md" 
+                      boxShadow="md" 
+                >
+                    <CardHeader>
+                        <Heading size="lg" color="white" as='u'>Fees & Passes</Heading>
+                    </CardHeader>
+                    <CardBody className="fees-card-body">
+                        <Text mt={2} color="white">A valid entrance fee or park pass is always required to enter Rocky Mountain National Park, 24 hours a day, 7 days a week.</Text>
+                        <UnorderedList mt={2} color="white">
+                            <ListItem>1 Day Private Vehicle - $30</ListItem>
+                            <ListItem>7 Day Private Vehicle - $35</ListItem>
+                            <ListItem>1 Day Per Person (Walk In) - $15</ListItem>
+                            <ListItem>1 Day Motorcycle - $30</ListItem>
+                            <ListItem>7 Day Motorcycle - $35</ListItem>
+                        </UnorderedList>
+                        <Text mt={2} color="white">For more information, visit the <Link href="https://www.nps.gov/romo/planyourvisit/fees.htm" isExternal>National Park Service website</Link>.</Text>
+                    </CardBody>
+                </Card>
+           
             </Box>
-
-            <Box mt={8}>
-                <Heading size="lg">Trailheads</Heading>
-                <Text mt={2}>Explore Rocky Mountain National Park's trails from various trailheads:</Text>
-                <ul>
-                    <li>Bear Lake Trailhead</li>
-                    <li>Emerald Lake Trailhead</li>
-                    <li>... (add more trailheads)</li>
-                </ul>
-                <Text mt={2}>Each trailhead provides access to different hiking trails with varying difficulty levels and scenic views.</Text>
-            </Box>
-        </Box>
+        </Center>
     );
 }
 
