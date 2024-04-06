@@ -7,10 +7,12 @@
         "image": "/dummyImages/trailImg.jpg",
         "comments": [
             {
+                "_id": 42222,
                 "commentText": "blah",
                 "likes": 69
             },
             {
+                "_id": 34,
                 "commentText": "joMama",
                 "likes": 4321
             }
@@ -24,10 +26,12 @@
         "image": "https://images.creativemarket.com/0.1.0/ps/6817666/1820/1205/m1/fpnw/wm1/oolrwxk91mq5qgcy43qmpytgtnpoorgsgfjqk2lav3iigwlwjrk1azt5yv4ttld6-.jpg?1565777986&s=6bc6cd73e05869ac8f565c0b43bd35ba",
         "comments": [
             {
+                "_id": 666,
                 "commentText": "blah",
                 "likes": 69
             },
             {
+                "_id": 90,
                 "commentText": "joMama",
                 "likes": 4321
             }
