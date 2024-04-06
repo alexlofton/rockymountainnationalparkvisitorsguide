@@ -1,17 +1,32 @@
 import React from 'react';
-import { Box, Image, Text, Checkbox } from '@chakra-ui/react';
+import { Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Box, Image, Text, Checkbox, Center } from '@chakra-ui/react';
 
 function WildlifeComponent({ name, imageSrc, scientificname, description, seen, onCheckboxChange }) {
   return (
-    <Box p={4}>
-      <Image src={imageSrc} alt={name} />
-      <Text mt={2} fontWeight="bold">{name}</Text>
-      <Text mt={2} fontStyle="italic">{scientificname}</Text>
-      <Text mt={2}>{description}</Text>
-      <Checkbox mt={2} isChecked={seen} onChange={onCheckboxChange}>
-        Seen
-      </Checkbox>
-    </Box>
+    <Center>
+      <Accordion allowToggle>
+        <AccordionItem border="none" mt={0} mb={0}>
+          <h2>
+            <AccordionButton bg="#1a472a" color="white" fontSize="15px" fontWeight="bold" px={4} py={2} borderRadius="md" _hover={{ bg: "#2F855A" }}>
+              <Box flex="1" textAlign="left">
+                {name}
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel mt={0} mb={0}>
+            <Box p={4} borderWidth="0" borderRadius="lg" overflow="hidden" shadow="md" bg="#2a623d">
+              <Image src={imageSrc} alt={name} borderRadius="md" />
+              <Text mt={4} fontWeight="bold" fontSize="xl" color="white">{name}</Text>
+              <Text mt={2} color="white">{description}</Text>
+              <Checkbox mt={4} color="white" isChecked={seen} onChange={onCheckboxChange}>
+                Seen
+              </Checkbox>
+            </Box>
+          </AccordionPanel>
+        </AccordionItem>
+      </Accordion>
+    </Center>
   );
 }
 

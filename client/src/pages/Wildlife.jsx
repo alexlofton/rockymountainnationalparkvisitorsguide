@@ -6,18 +6,16 @@ function WildlifePage() {
   const [wildlifeList, setWildlifeList] = useState([
     {
       id: 1,
-      name: 'TEST',
-      scientificname: 'TEST TEST',
-      imageSrc: 'TEST.jpg',
-      description: 'This is only a test',
+      name: 'Black Bear',
+      imageSrc: './client/src/assets/animals/bear.jpg',
+      description: 'In the majestic landscape of Rocky Mountain National Park, the black bear roams as a symbol of wilderness and resilience.  Its keen senses and powerful physique enable it to navigate the rugged slopes and dense forests with ease.',
       seen: false
     },
     {
       id: 2,
-      name: 'Cat',
-      scientificname: 'CAT TEST',
-      imageSrc: 'cat.jpg',
-      description: 'Cat',
+      name: 'Moose',
+      imageSrc: './client/src/assets/animals/moose.jpg',
+      description: 'Towering above the landscape with its massive frame and impressive antlers, the moose commands attention and respect. Often found grazing in meadows or wading through mountain lakes and streams, this magnificent creature is perfectly adapted to its natural habitat.',
       seen: false
     },
 
@@ -38,7 +36,7 @@ function WildlifePage() {
 
   return (
     <Box>
-      <Heading size="xl">Welcome to the Wildlife Page!</Heading>
+      <Heading size="xl" alignText="center>">Welcome to the Wildlife Page!</Heading>
       {wildlifeList.map(wildlife => (
         <WildlifeComponent
           key={wildlife.id}
