@@ -3,7 +3,7 @@
 }
 
 .NavBar{
-    /* float: left; */
+    min-height: 100%;
 }
 
 .mainCont {
