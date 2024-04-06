@@ -1,13 +1,22 @@
 const TrailComments = ({ comments }) => {
     return (
-        <div className="commSect">
-            {comments &&
-                comments.map((comment) => (
-                    <div key={comment._id}>
-                        
-                    </div>
-                ))
-            }
+        <div>
+            <h1 className="commTitle" >Comments:</h1>
+            <div className="commSect">
+                {comments &&
+                    comments.map((comment) => (
+                        <div className="comment" key={comment._id}>
+                            <h1 className="TcommUser">Username</h1>
+                            <p className="TcommText">{comment.commentText}</p>
+                            <div className="likeSect">
+                                <button>+ {comment.likes} </button>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
         </div>
     )
 }
+
+export default TrailComments;

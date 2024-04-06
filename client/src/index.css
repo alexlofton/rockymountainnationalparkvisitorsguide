@@ -3,11 +3,18 @@
     src: url('./assets/RusticAndBeautiful.otf') format("opentype");
 }
 
+@font-face {
+    font-family: NordinSlab;
+    src: url('./assets/NordinSlab.otf') format("opentype");
+}
+
 :root {
     --darkGreen: #1b430b;
+    --Green: #265d10;
     --l1: #8A723D;
     --lTan: rgb(138, 114, 61);
-    --Dtan: rgba(91, 73, 35, 1)
+    --Dtan: rgba(91, 73, 35, 1);
+    --vLtan: rgb(195, 164, 96);
 }
 
 * {
@@ -16,8 +23,8 @@
 }
 
 .cusTanBkg {
-    background: rgb(91,73,35);
-    background: linear-gradient(90deg, rgba(91,73,35,1) 0%, rgba(138,114,61,1) 50%, rgba(91,73,35,1) 100%); 
+    background: rgb(91, 73, 35);
+    background: linear-gradient(90deg, rgba(91, 73, 35, 1) 0%, rgba(138, 114, 61, 1) 50%, rgba(91, 73, 35, 1) 100%);
 }
 
 .w100 {
@@ -126,6 +133,7 @@
     background-color: rgb(170, 141, 79);
 
 }
+
 /* .accPanel p */
 .accPanBtn {
     margin-bottom: 1rem;
@@ -141,7 +149,7 @@
 .accPanBtn:hover {
     background-color: rgba(91, 73, 35, 1);
     color: white;
-    
+
 }
 
 .btnDiv {
@@ -173,6 +181,62 @@
     border-radius: 10px;
 }
 
+/* trail comment section */
+.commSect {
+    text-align: start;    
+    background-color: var(--vLtan);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+}
+
+.commTitle {
+    font-size: 2rem;
+    color: var(--vLtan);
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 2px solid var(--vLtan);
+    margin-top: 1rem;
+    text-align: start;    
+}
+
+.comment {
+    
+}
+
+.TcommUser {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3rem;
+}
+
+.TcommText {
+    margin-left: 1rem;
+}
+
+.likeSect {
+    display: flex;
+    /* justify-content: end; */
+}
+
+.likeSect:hover button {
+    background-color: var(--Dtan);
+    color: white;
+}
+
+.likeSect button {
+    padding-left:  0.3rem;
+    padding-right: 0.3rem;
+    padding-top: 0rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    margin-top: 0.5rem;
+}
+
+
 /* error container */
 .errCont {
     text-align: center;
@@ -186,13 +250,13 @@
 
 .errTitle {
     font-size: 4rem;
-    padding-bottom : 1rem;
+    padding-bottom: 1rem;
     color: white;
     font-family: RnB, Arial, Helvetica, sans-serif;
     letter-spacing: 0.5rem;
 }
 
-.errCont img{
+.errCont img {
     border-radius: 10px;
 }
 
