@@ -14,7 +14,7 @@ const Sidebar = () => {
             fontSize="20px" 
             spacing={4} 
             p={10} 
-            backgroundColor="tan" 
+            backgroundColor="rgb(170, 141, 79)" 
             w={200} height="100vh"
             className="NavBar"
             >

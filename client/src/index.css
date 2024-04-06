@@ -43,6 +43,7 @@
 .headR {
     background-color: var(--darkGreen);
     color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.664);
 }
 
 .headTitle {
@@ -93,10 +94,20 @@
 }
 
 /* trails Accordian styling */
+/* .accCont {
+    margin: 3rem;
+    margin-top: 1rem;
+    max-width: auto !important;
+    padding: 3rem;
+} */
+
 .accItem {
     border: 1px solid #00000000 !important;
     border-left: 0;
     border-right: 0;
+    margin: 3rem;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 .accBtn {
@@ -112,6 +123,8 @@
 
 .accPanel {
     background-color: rgb(138, 114, 61);
+    background-color: rgb(170, 141, 79);
+
 }
 /* .accPanel p */
 .accPanBtn {
@@ -138,15 +151,55 @@
 
 /* Single object */
 .sTitle {
-    background-color: var(--darkGreen);
+    /* background-color: var(--darkGreen); */
     color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .sBod {
-    background-color: var(--l1);
+    /* background-color: var(--l1); */
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .sCon {
     margin-right: 5rem !important;
     margin-left: 5rem !important;
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 0%;
+    background: radial-gradient(circle, rgba(138, 114, 61, 1) 0%, rgba(91, 73, 35, 1) 100%);
+    border-radius: 10px;
+}
+
+/* error container */
+.errCont {
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 0%;
+    background: radial-gradient(circle, rgba(138, 114, 61, 1) 0%, rgba(91, 73, 35, 1) 100%);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.errTitle {
+    font-size: 4rem;
+    padding-bottom : 1rem;
+    color: white;
+    font-family: RnB, Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5rem;
+}
+
+.errCont img{
+    border-radius: 10px;
+}
+
+.errMsg {
+    font-size: 3rem;
+    /* padding-bottom : 1rem; */
+    color: white;
+    font-family: RnB, Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5rem;
 }

@@ -24,6 +24,8 @@ const SingleTrail = () => {
                         <p>{trail.description}</p>
                         <img src={trail.image} alt={trail.name} />
                     </div>
+                    
+                    <form action=""></form>
                 </div>
             ) : (
                 <p>Trail not found</p>
