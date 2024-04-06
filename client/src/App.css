@@ -17,3 +17,40 @@ main {
     margin: 20px;
     padding-left: 15%;
 }
+
+.Homelanding {
+    font-size: 5vh;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+}
+
+.HomeDesc{
+    font-size: 16px;
+    padding: 30px;
+}
+
+.Logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height: 400px;
+}
+
+.SignupButton:hover {
+    transform: scale(1.06);
+    color: darkgreen;
+    transition: 300ms;
+}
+
+.LoginButton:hover {
+    transform: scale(1.06);
+    color: rgb(147, 231, 147);
+    transition: 300ms;
+}
+
+.HomeBtns{
+    display: flex;
+    justify-content: center;
+}
