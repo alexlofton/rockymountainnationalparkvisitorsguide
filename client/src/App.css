@@ -2,7 +2,7 @@
     box-shadow: 1px 0 20px -5px #000000
 }
 
-.NavBar{
+.NavBar {
     /* float: left; */
     height: auto;
 }
@@ -32,13 +32,13 @@ main {
     flex-direction: column;
 }
 
-.HomeDesc{
+.HomeDesc {
     font-size: 16px;
     padding: 30px;
     display: block;
 }
 
-.Logo{
+.Logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -59,12 +59,52 @@ main {
     transition: 300ms;
 }
 
-.HomeBtns{
+.HomeBtns {
     justify-content: center;
     display: flex;
 }
 
-.HomeBd{
+.HomeBd {
     flex-direction: column;
     height: 100vh;
+}
+
+.UserBox {
+    height: 100vb;
+    align-content: space-evenly;
+    display: block;
+    margin: auto;
+}
+
+.UserIb, .UserBtns {
+    background-color: white;
+    height: auto;
+    width: auto;
+    border-radius: 25px;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 0 20px -5px #000000
+
+}
+
+.UserN{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Usericon{
+    justify-content: center;
+    display: flex;
+} 
+
+.BdyCntn{
+    align-items: center;
+    width: 100vh;
+    display: flex;
 }
