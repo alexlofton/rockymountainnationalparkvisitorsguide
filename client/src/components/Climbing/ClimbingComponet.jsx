@@ -1,7 +1,7 @@
 import React from 'react';
 import { Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Box, Image, Text, Checkbox, Center } from '@chakra-ui/react';
 
-function ClimbingComponent({ name, description, location, trail }) {
+function ClimbingComponenet({ name, location, description, trail }) {
   return (
     <Center>
       <Accordion allowToggle>
@@ -18,7 +18,6 @@ function ClimbingComponent({ name, description, location, trail }) {
             <Box p={4} borderWidth="0" borderRadius="lg" overflow="hidden" shadow="md" bg="#2a623d">
               <Image src={imageSrc} alt={name} borderRadius="md" />
               <Text mt={4} fontWeight="bold" fontSize="xl" color="white">{name}</Text>
-              <Text mt={2} color="white">{description}</Text>
               <Text mt={2} color="white">{location}</Text>
               <Text mt={2} color="white">{trail}</Text>
             </Box>
@@ -29,4 +28,4 @@ function ClimbingComponent({ name, description, location, trail }) {
   );
 }
 
-export default ClimbingComponent;
+export default ClimbingComponenet;
