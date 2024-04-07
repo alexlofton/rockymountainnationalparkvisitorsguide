@@ -1,9 +1,8 @@
 .NavBar {
-    box-shadow: 1px 0 20px -5px #000000
+    box-shadow: 5px 0 10px -5px #000000;
 }
 
-.NavBar {
-    /* float: left; */
+.NavBar{
     height: auto;
 }
 
@@ -70,7 +69,7 @@ main {
 }
 
 .UserBox {
-    height: 100vb;
+    height: 100vh;
     align-content: space-evenly;
     display: block;
     margin: auto;

@@ -1,28 +1,28 @@
 import { useState, useEffect } from 'react';
 import { FormControl, FormLabel, Input, Button, useToast, FormErrorMessage } from '@chakra-ui/react';
 
-// import Auth from '../utils/auth';
-// import { useMutation } from '@apollo/client';
-// import { ADD_USER } from '../utils/mutations';
+import Auth from '../../utils/auth';
+import { useMutation } from '@apollo/client';
+import { ADD_USER } from '../../utils/mutations';
 
 const SignupForm = () => {
     const [userFormData, setUserFormData] = useState({ username: '', password: '' });
-    const [validated, setValidated] = useState(false); 
+    const [validated] = useState(false);
     const toast = useToast();
 
-    // const [AddUser, { error }] = useMutation(ADD_USER);
+    const [addUser, { error }] = useMutation(ADD_USER);
 
-    // useEffect(() => {
-    //     if (error) {
-    //         toast({
-    //             title: "An error occurred.",
-    //             description: "Something went wrong with your signup!",
-    //             status: "error",
-    //             duration: 9000,
-    //             isClosable: true,
-    //         });
-    //     }
-    // }, [error, toast]);
+    useEffect(() => {
+        if (error) {
+            toast({
+                title: "An error occurred.",
+                description: "Something went wrong with your signup!",
+                status: "error",
+                duration: 9000,
+                isClosable: true,
+            });
+        }
+    }, [error, toast]);
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -31,15 +31,20 @@ const SignupForm = () => {
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
-        setValidated(true);
+
+        const form = event.currentTarget;
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
 
         try {
-            const { data } = await AddUser({
+            const { data } = await addUser({
                 variables: { ...userFormData }
             });
             console.log(data);
 
-            // Auth.login(data.addUser.token);
+            Auth.login(data.addUser.token);
         } catch (err) {
             console.error(err);
         }
@@ -52,7 +57,7 @@ const SignupForm = () => {
 
     return (
         <>
-            <form noValidate onSubmit={handleFormSubmit}>
+            <form noValidate validated={validated} onSubmit={handleFormSubmit}>
                 <FormControl id="username" isRequired mb={4}>
                     <FormLabel>Username</FormLabel>
                     <Input
@@ -81,7 +86,7 @@ const SignupForm = () => {
                     mt={4}
                     colorScheme='teal'
                     type='submit'
-                    isDisabled={!(userFormData.username && userFormData.email && userFormData.password)}
+                    isDisabled={!(userFormData.username && userFormData.password)}
                 >
                     Submit
                 </Button>
