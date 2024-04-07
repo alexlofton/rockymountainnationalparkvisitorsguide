@@ -57,7 +57,7 @@ Mutation: {
     // return { newWildlife }
     // },
 
-    login: async (parent, { username, password }) => {
+    loginUser: async (parent, { username, password }) => {
     const user = await User.findOne({ username });
 
     if (!user) {
