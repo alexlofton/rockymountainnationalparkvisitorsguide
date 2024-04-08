@@ -1,7 +1,7 @@
 
 import * as React from 'react'
 import './App.css';
-import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
 
 import { ChakraProvider } from '@chakra-ui/react' // Imports Chakra UI
 import { setContext } from '@apollo/client/link/context'
@@ -11,9 +11,8 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar/index';
 import Footer from './components/Footer/Footer'; //Added footer component
 
-const httpLink = new ApolloClient({
+const httpLink = createHttpLink({
     uri: '/graphql',
-    cache: new InMemoryCache(),
 });
 
 const authLink = setContext((_, { headers }) => {
@@ -27,7 +26,7 @@ const authLink = setContext((_, { headers }) => {
 })
 
 const client = new ApolloClient({
-    uri: '/graphql',
+    link: authLink.concat(httpLink),
     cache: new InMemoryCache(),
 });
 

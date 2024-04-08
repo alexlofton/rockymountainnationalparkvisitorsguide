@@ -7,7 +7,7 @@ import { ADD_USER } from '../../utils/mutations';
 
 const SignupForm = () => {
     const [userFormData, setUserFormData] = useState({ username: '', password: '' });
-    const [validated] = useState(false);
+    // const [validated] = useState(false);
     const toast = useToast();
 
     const [addUser, { error }] = useMutation(ADD_USER);
@@ -57,7 +57,7 @@ const SignupForm = () => {
 
     return (
         <>
-            <form noValidate validated={validated} onSubmit={handleFormSubmit}>
+            <form onSubmit={handleFormSubmit}>  {/* might have to add validation noValidate validated={validated} */}
                 <FormControl id="username" isRequired mb={4}>
                     <FormLabel>Username</FormLabel>
                     <Input

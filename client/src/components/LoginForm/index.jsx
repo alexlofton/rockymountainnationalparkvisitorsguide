@@ -8,7 +8,7 @@ const LoginForm = () => {
   const [userFormData, setUserFormData] = useState({ username: '', password: '' });
   const [showAlert, setShowAlert] = useState(false);
   const [login, { error }] = useMutation( LOGIN_USER ) ;
-  const [validated] = useState(false);
+  // const [validated] = useState(false);
   const toast = useToast();
 
   const handleInputChange = (event) => {
@@ -21,7 +21,7 @@ const LoginForm = () => {
 
     try {
       const { data } = await login({ variables: { ...userFormData } });
-      Auth.login(data.LOGIN_USER.token);
+      Auth.login(data.login.token);
       toast({
         title: "Login successful.",
         description: "You've been logged in.",
@@ -44,7 +44,7 @@ const LoginForm = () => {
 
   return (
     <>
-      <form noValidate validated={validated} onSubmit={handleFormSubmit}>
+      <form onSubmit={handleFormSubmit}> {/*might have to add: validation noValidate validated={validated} */}
         <FormControl id="username" isRequired isInvalid={showAlert}>
           <FormLabel>Username</FormLabel>
           <Input 
