@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import dummyTrailData from '../../dummyData/dumTrails.json';
 import { Container, Box } from '@chakra-ui/react'
+import TrailComments from "../components/TrailComments";
 
 const SingleTrail = () => {
     const { trailId } = useParams();
@@ -24,6 +25,8 @@ const SingleTrail = () => {
                         <p>{trail.description}</p>
                         <img src={trail.image} alt={trail.name} />
                     </div>
+                    <TrailComments comments={trail.comments} />
+                    <form action=""></form>
                 </div>
             ) : (
                 <p>Trail not found</p>

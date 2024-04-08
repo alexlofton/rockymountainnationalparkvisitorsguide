@@ -18,8 +18,8 @@ const TrailList = ({ trails }) => {
     // return <h1>No trails, sorry</h1>
     // }
     return (
-        <Container>
-            <Accordion>
+        <Container className='accCont'>
+            <Accordion >
                 {trails &&
                     trails.map((trail) => (
                         <AccordionItem key={trail._id} className='accItem'>
