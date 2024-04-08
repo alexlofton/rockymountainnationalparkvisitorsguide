@@ -1,21 +1,9 @@
 [
     {
-        "name": "trail name",
-        "description": "trail description",
-        "length": "",
-        "image": "url",
-        "comments": [
-            {
-            "commentText": "Trail comments by user", 
-            "likes": 5
-            }
-        ]
-    },
-    {
         "name": "Mt. Ida",
         "description": "Mount Ida stands at an elevation of 12,880 feet, providing stunning panoramic views of the surrounding alpine landscapes. The trailhead starts from Milner Pass on Trail Ridge Road, and the hike typically takes around 6-8 hours round trip, covering approximately 9 miles. Hikers traverse through subalpine meadows, dense forests, and rocky terrain, encountering diverse flora and fauna along the way, including elk, marmots, and various wildflowers. The final ascent to the summit involves a steep and rocky climb, rewarding trekkers with breathtaking vistas of nearby peaks, alpine lakes, and expansive valleys. Hikers should be well-prepared with sturdy hiking boots, layers of clothing for unpredictable weather, plenty of water, and snacks. Due to the high elevation and rugged terrain, it's essential to acclimate properly and be cautious of altitude sickness symptoms.",
         "length": "9.28 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/uploads/1441299890323/sob7tqyjg9l766r/acc64897bc827a84065ae9566ba1dfd4?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -27,7 +15,7 @@
         "name": "Flattop Mountain and Hallett Peak",
         "description": "Flattop Mountain stands at 12,324 feet, and Hallett Peak rises to 12,713 feet, providing stunning panoramic views of the surrounding alpine landscapes. The trailhead begins at the Bear Lake Trailhead, and the hike typically covers approximately 10 miles round trip, including both peaks. Hikers ascend through subalpine forests, past picturesque alpine lakes such as Dream Lake and Emerald Lake, and traverse open tundra before reaching the summits. The climb to Flattop Mountain involves a steady ascent with well-maintained trails, while the final push to Hallett Peak is more challenging, requiring some scrambling over rocky terrain. From the summits, hikers are rewarded with breathtaking vistas of nearby peaks, glacier-carved valleys, and expansive vistas of Rocky Mountain National Park. Hikers should be prepared with sturdy hiking boots, layers of clothing for unpredictable weather, plenty of water, and snacks. Additionally, due to the high elevation and rugged terrain, it's essential to acclimate properly and be cautious of altitude sickness symptoms.",
         "length": "9.73, miles out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/uploads/1437842425287/28cbt669da8/6414589dd6b1fce0680ff12a79a18a6e?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -39,7 +27,7 @@
         "name": "Ypsilion Lake Trail",
         "description": "The Ypsilon Lake Trail in Colorado offers hikers a scenic adventure in Rocky Mountain National Park. Starting from the Lawn Lake Trailhead, the trail is approximately 9.4 miles round trip and gains about 2,200 feet in elevation. Hikers traverse through lush forests, alongside cascading streams, and across open meadows filled with wildflowers. The trail offers stunning views of the surrounding peaks, including Mount Ypsilon. Upon reaching Ypsilon Lake, hikers are rewarded with breathtaking vistas of the lake nestled amidst towering peaks and rugged terrain. Wildlife sightings are common along the trail, including elk, mule deer, and various bird species. Hikers should come prepared with sturdy hiking boots, layers of clothing for changing weather conditions, plenty of water, and snacks. Additionally, it's important to be aware of the potential for afternoon thunderstorms in the Rocky Mountains and to start the hike early in the day to avoid exposure to inclement weather.",
         "length": "8.38, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/uploads/1492488065041/0nvyedj8h3w/e1623e5f0781f6cc928d41985c919799?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -51,7 +39,7 @@
         "name": "Chasm Lake",
         "description": "Hiking Chasm Lake in Colorado offers an unforgettable experience in Rocky Mountain National Park. The trailhead starts at the Longs Peak Trailhead and covers approximately 8.4 miles round trip with an elevation gain of about 2,500 feet. Hikers embark on a challenging journey through dense forests, rocky switchbacks, and alpine meadows adorned with vibrant wildflowers. Along the way, breathtaking views of towering peaks, including Longs Peak, greet trekkers at every turn. As hikers ascend higher, they'll encounter dramatic landscapes carved by glaciers and cascading waterfalls. Upon reaching Chasm Lake, nestled beneath the sheer cliffs of Longs Peak, hikers are rewarded with a stunning alpine oasis surrounded by towering peaks and pristine wilderness. Wildlife sightings, such as marmots and bighorn sheep, are common along the trail. Hikers should come prepared with sturdy hiking boots, layers of clothing for changing weather conditions, plenty of water, and snacks. Due to the high elevation and challenging terrain, it's essential to be in good physical condition and to start the hike early to allow ample time to complete the journey safely.",
         "length": "8.02, miles out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/uploads/1413572813105/kd48ikhiqus1yvi/a0273390fa3e358cfd2f0131d0c9826f?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -61,9 +49,9 @@
     },
     {
         "name": "Sky Pond",
-        "description": "trail description",
-        "length": "Hiking to Sky Pond in Colorado is a thrilling adventure in Rocky Mountain National Park. The trailhead begins at the Glacier Gorge Trailhead and covers approximately 8.4 miles round trip, with an elevation gain of about 1,750 feet. Hikers traverse through dense forests, rocky terrain, and alpine meadows, offering stunning views of towering peaks, including Longs Peak and Taylor Peak. Along the way, trekkers pass by picturesque alpine lakes such as Alberta Falls and The Loch, surrounded by breathtaking mountain scenery. As hikers ascend higher, they encounter Timberline Falls, a majestic waterfall cascading down a rocky cliff face. Beyond Timberline Falls lies Sky Pond, a pristine alpine lake nestled beneath sheer granite cliffs. The serene beauty of Sky Pond, surrounded by rugged peaks and lush vegetation, makes it a perfect spot for a rest and a scenic lunch break. Wildlife sightings, such as marmots, pika, and elk, are common along the trail. Hikers should come prepared with sturdy hiking boots, layers of clothing for changing weather conditions, plenty of water, and snacks. Due to the high elevation and rugged terrain, it's important to be in good physical condition and to start the hike early to avoid afternoon thunderstorms.",
-        "image": "8.43 miles, out-and-back",
+        "description": "Hiking to Sky Pond in Colorado is a thrilling adventure in Rocky Mountain National Park. The trailhead begins at the Glacier Gorge Trailhead and covers approximately 8.4 miles round trip, with an elevation gain of about 1,750 feet. Hikers traverse through dense forests, rocky terrain, and alpine meadows, offering stunning views of towering peaks, including Longs Peak and Taylor Peak. Along the way, trekkers pass by picturesque alpine lakes such as Alberta Falls and The Loch, surrounded by breathtaking mountain scenery. As hikers ascend higher, they encounter Timberline Falls, a majestic waterfall cascading down a rocky cliff face. Beyond Timberline Falls lies Sky Pond, a pristine alpine lake nestled beneath sheer granite cliffs. The serene beauty of Sky Pond, surrounded by rugged peaks and lush vegetation, makes it a perfect spot for a rest and a scenic lunch break. Wildlife sightings, such as marmots, pika, and elk, are common along the trail. Hikers should come prepared with sturdy hiking boots, layers of clothing for changing weather conditions, plenty of water, and snacks. Due to the high elevation and rugged terrain, it's important to be in good physical condition and to start the hike early to avoid afternoon thunderstorms.",
+        "length": "8.43 miles, out-and-back",
+        "image": "https://images.theoutbound.com/uploads/1424396107673/eg8goran8czbyb9/392b0e416110279aec65dbb001872409?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -75,7 +63,7 @@
         "name": "Bear Lake to Fern Lake Trailhead",
         "description": "Hiking from Bear Lake to Fern Lake Trailhead in Colorado offers a diverse and scenic trek through Rocky Mountain National Park. The trail covers approximately 9.7 miles one way, with an elevation gain of around 2,080 feet. Beginning at the popular Bear Lake Trailhead, hikers pass by the picturesque Bear Lake and continue through dense forests of pine and aspen trees. As the trail ascends, it offers stunning views of the surrounding peaks and valleys, including glimpses of Longs Peak and the Continental Divide. Along the way, hikers may encounter wildlife such as elk, mule deer, and various bird species. The trail passes by several scenic spots, including Alberta Falls, The Pool, and Fern Falls, where hikers can take in the beauty of cascading waterfalls and pristine mountain streams. Finally, the trail ends at Fern Lake Trailhead, offering a rewarding conclusion to the journey. Hikers should come prepared with sturdy hiking boots, layers of clothing for changing weather conditions, plenty of water, and snacks. It's also essential to be mindful of afternoon thunderstorms common in the Rocky Mountains and to start the hike early to allow ample time to complete the trek safely.",
         "length": "10 miles, point-to-point",
-        "image": "url",
+        "image": "https://images.theoutbound.com/uploads/1441993820644/uptsbpfwqes46lxr/eb552f2988d303a8b5ed750b4f4d068e?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -87,7 +75,7 @@
         "name": "Lake Helene and Two Rivers Lake",
         "description": "Hiking to Lake Helene and Two Rivers Lake in Colorado offers a picturesque journey through the breathtaking landscapes of Rocky Mountain National Park. The trailhead typically begins at the Fern Lake Trailhead or the Bear Lake Trailhead, depending on the chosen route, and covers approximately 6 to 8 miles round trip, with an elevation gain of around 1,000 to 1,500 feet. Hikers traverse through dense forests, past meandering streams, and across open meadows adorned with colorful wildflowers. Along the way, stunning views of towering peaks, including Notchtop Mountain and Little Matterhorn, grace the horizon. Lake Helene, nestled amidst rugged cliffs and alpine tundra, offers a serene setting for a rest and a scenic lunch break. Continuing onward, hikers reach Two Rivers Lake, where the convergence of two mountain streams creates a tranquil alpine oasis surrounded by pristine wilderness. Wildlife sightings, such as elk, marmots, and ptarmigan, are common along the trail. Hikers should come prepared with sturdy hiking boots, layers of clothing for changing weather conditions, plenty of water, and snacks. Due to the high elevation and rugged terrain, it's important to be in good physical condition and to start the hike early to avoid afternoon thunderstorms.",
         "length": "6.18 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/contents/104353/assets/1439253222512?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -99,7 +87,7 @@
         "name": "Ouzel and Bluebird Lakes",
         "description": "Hiking to Ouzel and Bluebird Lakes in Colorado offers a rewarding adventure through the stunning landscapes of Rocky Mountain National Park. The trail typically begins at the Wild Basin Trailhead and covers approximately 10 to 12 miles round trip, with an elevation gain of around 2,000 to 2,500 feet. Hikers journey through dense forests of pine and aspen trees, alongside cascading waterfalls and babbling brooks. Along the way, breathtaking views of towering peaks, including Mount Copeland and Ouzel Peak, grace the horizon. Ouzel Lake, nestled amidst rugged cliffs and alpine meadows, provides a serene setting for a rest and a scenic lunch break. Continuing onward, hikers ascend to Bluebird Lake, a pristine alpine lake surrounded by towering granite walls and lush vegetation. Wildlife sightings, such as mule deer, bighorn sheep, and various bird species, are common along the trail. Hikers should come prepared with sturdy hiking boots, layers of clothing for changing weather conditions, plenty of water, and snacks. Due to the high elevation and rugged terrain, it's important to be in good physical condition and to start the hike early to allow ample time to complete the trek safely.",
         "length": "14 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/contents/105613/assets/1444350577257?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -111,7 +99,7 @@
         "name": "Nymph, Dream, Emerald, and Haiyaha Lakes",
         "description": "Hiking to Nymph, Dream, Emerald, and Haiyaha Lakes in Colorado offers a delightful trek through the enchanting landscapes of Rocky Mountain National Park. The trail typically starts from the Bear Lake Trailhead and covers approximately 3.6 to 4.6 miles round trip, depending on the specific lakes visited, with relatively little elevation gain. Beginning at the iconic Bear Lake, hikers follow well-marked trails through dense forests of pine and aspen trees. Along the way, they encounter the serene Nymph Lake, surrounded by lush vegetation and colorful wildflowers. Continuing onward, the trail leads to Dream Lake, renowned for its crystal-clear waters reflecting the towering peaks of Hallett Peak and Flattop Mountain. From Dream Lake, hikers can choose to extend their journey to Emerald Lake, where they're treated to stunning views of the surrounding alpine scenery, including the dramatic Tyndall Gorge and the jagged peaks of the Continental Divide. For those seeking a more secluded adventure, Haiyaha Lake offers a tranquil retreat nestled amidst rugged granite boulders and dense forests. Its unique shoreline, dotted with massive rocks and twisted trees, provides an ideal spot for exploration and relaxation. Throughout the hike, wildlife sightings such as elk, mule deer, and various bird species are common, adding to the enchantment of the experience. Hikers should come prepared with sturdy hiking boots, layers of clothing for changing weather conditions, plenty of water, and snacks. Due to the popularity of the trail, it's advisable to arrive early to secure parking and to avoid crowds.",
         "length": "4.51 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/uploads/1414368171551/xumkhtfv418/ba5cc5645e5a61684626958f892c422e?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -123,7 +111,7 @@
         "name": "Ptarmigan Lake",
         "description": "Hiking to Ptarmigan Lake in Colorado offers a scenic trek through the Eagles Nest Wilderness. The 6.8-mile round trip trail starts from the Gore Creek Trailhead, with moderate elevation gain. Along the way, hikers enjoy views of Gore Creek and surrounding peaks. Ptarmigan Lake itself is a serene alpine destination, perfect for a rest and wildlife spotting. Hikers should be prepared with sturdy gear and water. It's a tranquil escape into Colorado's wilderness.",
         "length": "11.33 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/uploads/1455304433376/fk6hu1updi5p14i/e9ef22657bfd102d8741b82ad697abae?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -135,7 +123,7 @@
         "name": "Mummy Kill (a.k.a. Mummy Mania)",
         "description": "Mummy Kill, also known as Mummy Mania, is an intense and challenging hiking route in Colorado's Rocky Mountain National Park. It involves summiting four peaks in the Mummy Range: Mummy Mountain, Hagues Peak, Fairchild Mountain, and Ypsilon Mountain. This demanding trek covers approximately 14 miles round trip, with a significant elevation gain and rugged terrain. Hikers must be well-prepared with proper gear, including sturdy hiking boots, plenty of water, food, and navigation tools. Additionally, hikers should have experience with off-trail navigation and be prepared for unpredictable weather conditions. Mummy Kill offers breathtaking views of the surrounding alpine scenery but is only suitable for experienced and well-equipped hikers.",
         "length": "20 miles, point-to-point",
-        "image": "url",
+        "image": "https://images.theoutbound.com/uploads/1449863732781/az30alfeue8c9pb9/8f0db131f8b853d0a2d6385bd7a31f27?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -147,7 +135,7 @@
         "name": "Longs Peak",
         "description": "Hiking Longs Peak in Colorado is a challenging adventure in Rocky Mountain National Park. The popular Keyhole Route spans about 14 miles round trip with an elevation gain of around 4,850 feet. The trail starts at the Longs Peak Trailhead and passes through diverse landscapes, including forests, meadows, and rocky terrain. Hikers encounter landmarks like the Boulder Field and the Keyhole notch. Reaching the summit requires physical fitness, mental preparation, and proper gear. Despite the stunning views, hikers must be aware of high-altitude risks and changing weather conditions. Overall, hiking Longs Peak is a challenging but rewarding experience for experienced adventurers.",
         "length": "14.5 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/uploads/1440788542317/28t1xqzls81/9be312247a6f6250b9d91fa37e46a905?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -159,7 +147,7 @@
         "name": "Verna, Spirit, Fourth and Fifth Lakes",
         "description": "Hiking to Verna, Spirit, Fourth, and Fifth Lakes in Colorado offers a scenic journey through Rocky Mountain National Park. The 12-mile round trip trail starts at East Inlet Trailhead, with moderate elevation gain. Hikers traverse dense forests, alongside East Inlet Creek, and encounter picturesque lakes surrounded by towering peaks. Sturdy gear, water, and caution are essential for this remote trek.",
         "length": "19 miles, out and back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/uploads/1409284745356/4l3au3h38uissjor/9dd2c28719199b66bdfd0c18682933e6?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -171,7 +159,7 @@
         "name": "Alberta Falls",
         "description": "Hiking to Alberta Falls in Colorado is a popular and accessible adventure in Rocky Mountain National Park. The trail starts from the Glacier Gorge Trailhead or Bear Lake Trailhead, covering about 1.6 miles round trip with a relatively gentle incline. Hikers traverse through beautiful forests of pine and aspen trees, following the sound of rushing water to reach the stunning 30-foot waterfall. Alberta Falls cascades down granite cliffs, offering a picturesque spot for photos and a refreshing break. The hike is suitable for hikers of all skill levels and is particularly enjoyable during the summer months when the falls are at their fullest.",
         "length": "1.66 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/contents/106803/assets/1466633773670?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -183,7 +171,7 @@
         "name": "  Black Lake to An Alpine Paradise ",
         "description": "Hiking from Black Lake to an alpine paradise in Colorado offers a stunning 10-mile round trip through Rocky Mountain National Park. The trail begins at Glacier Gorge Trailhead and leads through forests, past waterfalls, and eventually to Black Lake, nestled in rocky cliffs. Continuing on, hikers find themselves in an alpine wonderland with picturesque lakes and vibrant wildflowers. Wildlife sightings are common, so bring sturdy gear, water, and snacks for this moderate to strenuous hike.",
         "length": "11.38 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/uploads/1411188999641/uk1l62b3t2t65hfr/ac8f4f409ed6c1e05a44b2326ba3b0f2?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -195,7 +183,7 @@
         "name": "Sandbeach Lake",
         "description": "Hiking to Sandbeach Lake in Colorado offers a serene 8.4-mile round trip through Rocky Mountain National Park. The trail begins at Wild Basin Trailhead, winding through forests and streams, ending at a tranquil alpine lake with sandy shores. Wildlife sightings are common, so bring essentials like sturdy boots, water, and snacks for this moderate hike.",
         "length": "8.56 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/2022/10/17/23/55423eda67e4c5bd8a0d2ca1e9a82218?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -207,7 +195,7 @@
         "name": "Lumpy Ridge to Gem Lake",
         "description": "Hiking from Lumpy Ridge to Gem Lake in Colorado is a scenic 3.5-mile round trip. The trail winds through unique rock formations, forests, and meadows, offering stunning views of the surrounding peaks. Gem Lake, nestled among rugged cliffs, provides a serene spot for a rest and a picnic. It's a moderate hike suitable for all skill levels.",
         "length":"3.12 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/2022/09/12/01/4598975c1368016da88ee0e9317d740c?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -219,7 +207,7 @@
         "name": "Big Meadows and Granite Falls",
         "description": "Hiking to Big Meadows and Granite Falls in Colorado offers an 8.4-mile round trip through Rocky Mountain National Park. Starting at Green Mountain Trailhead, hikers traverse forests, meadows, and streams. Big Meadows provides expansive mountain views, while Granite Falls offers a scenic cascade. It's a moderate hike, so bring sturdy gear, water, and snacks for this picturesque adventure.",
         "length": "10.3 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/2022/09/12/01/05876357de5e7f23ba57da7c7f9828e1?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -231,7 +219,7 @@
         "name": "Ouzel Falls",
         "description": "Hiking to Ouzel Falls in Colorado offers a scenic 5.4-mile round trip through Rocky Mountain National Park. The trail starts at Wild Basin Trailhead and leads through forests and alongside streams to the stunning 40-foot waterfall. It's a moderate hike suitable for most skill levels, so bring sturdy gear, water, and snacks for this picturesque adventure.",
         "length": "5.22 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/2022/09/12/02/b3b7b9725692b3c1866949e489e9dcbe?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -243,7 +231,7 @@
         "name": "Deer Mountain",
         "description": "Hiking Deer Mountain in Colorado offers a scenic 6-mile round trip in Rocky Mountain National Park. Starting at Deer Mountain Trailhead, hikers traverse diverse landscapes with moderate difficulty. At the summit, enjoy panoramic views of the Rockies. It's a popular trail, so arrive early and bring essentials like sturdy boots, water, and snacks.",
         "length": "6.03 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/2022/09/12/02/315d2f66a33443270b28ee6a3c4fdd92?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -255,7 +243,7 @@
         "name": "Copeland Falls to Calypso Cascades",
         "description": "Hiking from Copeland Falls to Calypso Cascades in Colorado offers a scenic 3.6-mile round trip through Rocky Mountain National Park. The trail is easy to moderate, leading past Copeland Falls and tranquil forests to the stunning Calypso Cascades. It's a popular trail, so arrive early and bring essentials like sturdy boots, water, and snacks.",
         "length": "3.53 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/2022/10/18/02/656ed0fe5b68401fee389ce7c460a7d6?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -267,7 +255,7 @@
         "name": "Alpine Ridge Trail",
         "description": "Hiking the Alpine Ridge Trail offers a breathtaking adventure in Colorado's Rocky Mountain National Park. This short, 0.6-mile loop trail provides stunning panoramic views of the surrounding mountains, valleys, and alpine tundra. Starting from the Alpine Visitor Center along Trail Ridge Road, the trail ascends gently to an elevation of over 12,000 feet, allowing hikers to experience the beauty and unique ecosystems of the high alpine environment. Along the way, visitors may encounter wildflowers, wildlife, and interpretive signs explaining the area's geology and ecology. Due to the high elevation, hikers should take precautions against altitude sickness and be prepared for rapidly changing weather conditions. Overall, the Alpine Ridge Trail offers a memorable and accessible hiking experience showcasing the grandeur of the Rocky Mountains.",
         "length": "0.67 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/2022/10/18/03/a839954f26088bc27b872085e097b94e?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -279,7 +267,7 @@
         "name": "Coyote Valley Colorado River Trail",
         "description": "Hiking the Coyote Valley Colorado River Trail in Colorado offers a scenic adventure along the banks of the Colorado River. This relatively easy trail, spanning approximately 1.5 miles one way, winds through the picturesque Coyote Valley near the town of Kremmling. Hikers are treated to stunning views of the river, surrounding cliffs, and diverse riparian habitat. The trail is popular for birdwatching, wildlife viewing, and fishing. It's also wheelchair accessible, making it suitable for hikers of all abilities. Overall, the Coyote Valley Colorado River Trail provides a tranquil escape into the beauty of Colorado's riverine landscapes.",
         "length": "1.27 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/2022/10/18/03/1e23498e4f6a9baa9b61b11b2b6281ff?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -291,7 +279,7 @@
         "name": "Adams Falls",
         "description": "Hiking to Adams Falls in Colorado offers a scenic and accessible adventure in Rocky Mountain National Park. The trailhead starts near the East Inlet Trailhead parking lot and spans only about 0.6 miles round trip, making it suitable for hikers of all skill levels. Along the trail, hikers encounter stunning views of the rushing waters of East Inlet Creek and towering cliffs. Adams Falls itself is a picturesque 55-foot waterfall, surrounded by lush vegetation and impressive rock formations. It's an ideal spot for a short hike, a picnic, or simply enjoying the sights and sounds of nature. Overall, Adams Falls provides a rewarding and family-friendly hiking experience in the heart of the Rocky Mountains.",
         "length": "1 mile, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/2022/10/18/03/9cebac6073104724bcb7966ed4821118?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -303,7 +291,7 @@
         "name": "Cub Lake",
         "description": "Hiking to Cub Lake in Colorado offers a scenic 4.8-mile round trip through Rocky Mountain National Park. Starting at Cub Lake Trailhead, hikers traverse diverse landscapes with moderate difficulty. The serene alpine lake is perfect for a rest and photos. Arrive early to avoid crowds and bring essentials like sturdy boots, water, and snacks.",
         "length": "4.6 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/2022/10/18/03/7952ec2baaad4abecc2537ea9e1acd33?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -315,7 +303,7 @@
         "name": "Bierstadt Lake",
         "description": "Hiking to Bierstadt Lake in Colorado is a scenic 2.4-mile round trip in Rocky Mountain National Park. Starting at Bierstadt Lake Trailhead, hikers traverse diverse landscapes with moderate difficulty. The lake offers panoramic views, making it ideal for a rest and photos. Arrive early to avoid crowds and bring essentials like sturdy boots, water, and snacks.",
         "length": "2.93 miles, loop",
-        "image": "url",
+        "image": "https://images.theoutbound.com/2022/10/18/03/128d92a877143dd475e815b987c93f71?w=680a",
         "comments": [
             {
             "commentText": "Trail comments by user", 
@@ -327,47 +315,11 @@
         "name": "Notchtop Mountain",
         "description": "Hiking Notchtop Mountain in Colorado is a challenging 9 to 10-mile round trip from Bear Lake or Lake Helene Trailhead in Rocky Mountain National Park. The strenuous trail offers stunning views of alpine landscapes and nearby peaks. Prepare with sturdy gear, water, and snacks. It's a memorable adventure for experienced hikers.",
         "length": "3.5 miles, out-and-back",
-        "image": "url",
+        "image": "https://images.theoutbound.com/2022/10/18/03/97aba99e8e838c5e187d47136df0c533?w=680",
         "comments": [
             {
             "commentText": "Trail comments by user", 
             "likes": 27
-            }
-        ]
-    },
-    {
-        "name": "trail name",
-        "description": "trail description",
-        "length": "",
-        "image": "url",
-        "comments": [
-            {
-            "commentText": "Trail comments by user", 
-            "likes": 5
-            }
-        ]
-    },
-    {
-        "name": "trail name",
-        "description": "trail description",
-        "length": "",
-        "image": "url",
-        "comments": [
-            {
-            "commentText": "Trail comments by user", 
-            "likes": 5
-            }
-        ]
-    },
-    {
-        "name": "trail name",
-        "description": "trail description",
-        "length": "",
-        "image": "url",
-        "comments": [
-            {
-            "commentText": "Trail comments by user", 
-            "likes": 5
             }
         ]
     }
