@@ -5,6 +5,7 @@
 .NavBar{
     min-height: 100vh;
     height: auto !important;
+    min-width: 200px;
 }
 
 .mainCont {
@@ -107,4 +108,10 @@ main {
     align-items: center;
     width: 100vh;
     display: flex;
+}
+
+.LogoutBttn {
+    transform: scale(1.06);
+    color: rgb(147, 231, 147);
+    transition: 300ms;
 }

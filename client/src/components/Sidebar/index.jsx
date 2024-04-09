@@ -1,7 +1,7 @@
 import React from "react";
-import { List, ListIcon, ListItem } from "@chakra-ui/react";
+import { List, ListIcon, ListItem, Button } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
-import { CalendarIcon } from "@chakra-ui/icons";
+import { CalendarIcon, UnlockIcon } from "@chakra-ui/icons";
 import { MdKayaking, MdOutlineNordicWalking, MdOutlinePets, MdPerson3 } from "react-icons/md";
 import Auth from '../../utils/auth';
 import '../../App.css';
@@ -9,6 +9,12 @@ import '../../App.css';
 
 
 const Sidebar = () => {
+
+    const handleLogout = () => {
+        Auth.logout();
+        window.location.href = '/';
+    };
+
     return (
         <List
             color="white"
@@ -27,7 +33,6 @@ const Sidebar = () => {
                 </NavLink>
             </ListItem>
 
-            {/* Conditional rendering based on Auth.loggedIn() */}
             {Auth.loggedIn() && (
                 <>
                     <ListItem className="NavItem">
@@ -59,6 +64,13 @@ const Sidebar = () => {
                     Profile
                 </NavLink>
             </ListItem>
+
+            {Auth.loggedIn() && (
+                <ListItem className="NavItem" onClick={handleLogout} style={{ cursor: 'pointer' }}>
+                    <ListIcon as={UnlockIcon} color="white" />
+                    Log Out
+                </ListItem>
+            )}
         </List>
     )
 };

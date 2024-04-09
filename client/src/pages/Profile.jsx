@@ -32,7 +32,7 @@ const Profile = () => {
                         <h1 className="UserN">Welcome User</h1>
                         <Tabs variant="soft-rounded" colorScheme="green">
                             <TabList>
-                                <Tab>Favorite Trails</Tab>
+                                <Tab>Completed Trails</Tab>
                                 {/* <Tab>Completed Trails</Tab> */}
                                 {/* <Tab>Wildlife</Tab> */}
                             </TabList>
