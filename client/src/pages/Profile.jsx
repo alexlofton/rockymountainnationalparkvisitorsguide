@@ -30,7 +30,9 @@ const Profile = () => {
                         <div className="Usericon">
                             <Icon as={MdPerson3} boxSize={40} />
                         </div>
-                        <h1 className="UserN">Welcome User</h1>
+                        {compTrailData.map((trail) => (
+                            <h1 className="UserN">Welcome {trail.username}</h1>
+                        ))}
                         <Tabs variant="soft-rounded" colorScheme="green">
                             <TabList>
                                 <Tab>Completed Trails</Tab>
