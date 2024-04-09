@@ -1,7 +1,7 @@
 import React from "react";
 import { List, ListIcon, ListItem } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
-import { CalendarIcon, SunIcon } from "@chakra-ui/icons";
+import { CalendarIcon } from "@chakra-ui/icons";
 import {  MdKayaking, MdOutlineNordicWalking, MdOutlinePets, MdPerson3 } from "react-icons/md";
 import '../../App.css';
 
@@ -15,7 +15,8 @@ const Sidebar = () => {
             spacing={4} 
             p={10} 
             backgroundColor="rgb(170, 141, 79)" 
-            w={200} height="100vh"
+            w={200} 
+            height="100vh"
             className="NavBar"
             >
             <ListItem className="NavItem">

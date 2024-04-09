@@ -24,7 +24,7 @@ const Home = () => {
     };
 
     return (
-        <>
+        <div className='HomeBd'>
             <img className="Logo" src="../src/assets/RMLOGO.png" />
             <div className='Homelanding'>
                 <h1> Discover Rocky Mountain's marvels, one adventure at a time.</h1>
@@ -71,7 +71,7 @@ const Home = () => {
                     </ModalBody>
                 </ModalContent>
             </Modal>
-        </>
+        </ div>
     );
 };
 

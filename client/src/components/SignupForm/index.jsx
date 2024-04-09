@@ -7,22 +7,22 @@ import { ADD_USER } from '../../utils/mutations';
 
 const SignupForm = () => {
     const [userFormData, setUserFormData] = useState({ username: '', password: '' });
-    const [validated, setValidated] = useState(false); 
+    const [validated, setValidated] = useState(false);
     const toast = useToast();
 
     const [addUser, { error }] = useMutation(ADD_USER);
 
-    // useEffect(() => {
-    //     if (error) {
-    //         toast({
-    //             title: "An error occurred.",
-    //             description: "Something went wrong with your signup!",
-    //             status: "error",
-    //             duration: 9000,
-    //             isClosable: true,
-    //         });
-    //     }
-    // }, [error, toast]);
+    useEffect(() => {
+        if (error) {
+            toast({
+                title: "An error occurred.",
+                description: "Something went wrong with your signup!",
+                status: "error",
+                duration: 9000,
+                isClosable: true,
+            });
+        }
+    }, [error, toast]);
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -52,7 +52,7 @@ const SignupForm = () => {
 
     return (
         <>
-            <form noValidate onSubmit={handleFormSubmit}>
+            <form onSubmit={handleFormSubmit}>  {/* might have to add validation noValidate validated={validated} */}
                 <FormControl id="username" isRequired mb={4}>
                     <FormLabel>Username</FormLabel>
                     <Input

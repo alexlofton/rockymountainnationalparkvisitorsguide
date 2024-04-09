@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Heading, Text, Link, UnorderedList, ListItem, Center, Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react';
+import '../../App.css';
 
 function VisitorsAmenities() {
     return (
