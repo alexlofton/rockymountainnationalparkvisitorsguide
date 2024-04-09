@@ -22,14 +22,14 @@ Query: {
     },
     // need queries for Trails
     allTrails: async (parent, args, context) => {
-    //if (context.user) {
+if (context.user) {
         console.log("hit here")
         const trailData = await Trail.find();
         console.log(trailData)
         return trailData;
-   // }
+    }
 
-    //throw new AuthenticationError("Not logged in");
+throw new AuthenticationError("Not logged in");
     },
 
     // getAllWildLife: async (parent, arg, context) => {

@@ -21,6 +21,7 @@ const LoginForm = () => {
 
     try {
       const { data } = await login({ variables: { ...userFormData } });
+    Auth.login(data.login.token);
       Auth.login(data.login.token);
       toast({
         title: "Login successful.",
@@ -73,7 +74,7 @@ const LoginForm = () => {
           mt={4}
           colorScheme="green"
           type="submit"
-          isDisabled={!(userFormData.username && userFormData.password)}
+          isDisabled={!userFormData.username && !userFormData.password}
         >
           Submit
         </Button>

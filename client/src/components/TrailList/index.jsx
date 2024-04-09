@@ -13,7 +13,8 @@ import {
 import { Link } from 'react-router-dom'
 
 
-const TrailList = ({ trails }) => {
+const TrailList = ({ trails, user }) => {
+    console.log("user", user)
     // if (blah) {
     // return <h1>No trails, sorry</h1>
     // }
