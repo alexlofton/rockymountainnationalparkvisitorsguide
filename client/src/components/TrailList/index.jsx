@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom'
 
 import * as React from 'react'
 
-const TrailList = ({ trails, user }) => {
+const TrailList = ({ trails, user, completed, onCheckboxChange }) => {
     console.log("user", user)
     // if (blah) {
     // return <h1>No trails, sorry</h1>
@@ -44,7 +44,6 @@ const TrailList = ({ trails, user }) => {
                             <AccordionPanel className='accPanel'>
                                 <p>
                                     {trail.description}
-                                    {trail._id}
                                 </p>
                                 <div className='btnDiv'>
                                     <Link
