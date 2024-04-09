@@ -14,10 +14,6 @@ const climbingSchema = new Schema(
         image: {
             type: String
         },
-        trail: [{
-            type: Schema.Types.ObjectId,
-            ref: "trail"
-        }],
         comments: [commentSchema]
     },
 
