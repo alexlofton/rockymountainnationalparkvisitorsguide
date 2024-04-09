@@ -1,16 +1,16 @@
 import { useState, useEffect } from 'react';
 import { FormControl, FormLabel, Input, Button, useToast, FormErrorMessage } from '@chakra-ui/react';
 
-// import Auth from '../utils/auth';
-// import { useMutation } from '@apollo/client';
-// import { ADD_USER } from '../utils/mutations';
+import Auth from '../../utils/auth';
+import { useMutation } from '@apollo/client';
+import { ADD_USER } from '../../utils/mutations';
 
 const SignupForm = () => {
     const [userFormData, setUserFormData] = useState({ username: '', password: '' });
     const [validated, setValidated] = useState(false); 
     const toast = useToast();
 
-    // const [AddUser, { error }] = useMutation(ADD_USER);
+    const [addUser, { error }] = useMutation(ADD_USER);
 
     // useEffect(() => {
     //     if (error) {
@@ -34,12 +34,12 @@ const SignupForm = () => {
         setValidated(true);
 
         try {
-            const { data } = await AddUser({
+            const { data } = await addUser({
                 variables: { ...userFormData }
             });
             console.log(data);
 
-            // Auth.login(data.addUser.token);
+            Auth.login(data.addUser.token);
         } catch (err) {
             console.error(err);
         }
@@ -81,7 +81,7 @@ const SignupForm = () => {
                     mt={4}
                     colorScheme='teal'
                     type='submit'
-                    isDisabled={!(userFormData.username && userFormData.email && userFormData.password)}
+                    isDisabled={!(userFormData.username && userFormData.password)}
                 >
                     Submit
                 </Button>
