@@ -33,20 +33,20 @@ const Profile = () => {
                         <Tabs variant="soft-rounded" colorScheme="green">
                             <TabList>
                                 <Tab>Favorite Trails</Tab>
-                                <Tab>Completed Trails</Tab>
-                                <Tab>Wildlife</Tab>
+                                {/* <Tab>Completed Trails</Tab> */}
+                                {/* <Tab>Wildlife</Tab> */}
                             </TabList>
 
                             <TabPanels>
                                 <TabPanel>
                                     <p>one!</p>
                                 </TabPanel>
-                                <TabPanel>
+                                {/* <TabPanel>
                                     <p>two!</p>
                                 </TabPanel>
                                 <TabPanel>
                                     <p>three!</p>
-                                </TabPanel>
+                                </TabPanel> */}
                             </TabPanels>
                         </Tabs>
                     </Box>

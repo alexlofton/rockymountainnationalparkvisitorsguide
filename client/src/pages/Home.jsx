@@ -35,10 +35,10 @@ const Home = () => {
                     home. Whether you're an avid hiker seeking to conquer new peaks, a wildlife 
                     enthusiast eager to spot majestic creatures in their natural habitat, or 
                     someone looking to immerse themselves in the serene beauty of mountain landscapes, 
-                    we've got you covered. Our comprehensive guides, detailed maps, and firsthand tips
-                     ensure that your exploration of the Rockies is not just a journey, but a truly 
-                     unforgettable experience. Join us in celebrating the wild, the majestic, 
-                     and the awe-inspiring wonders of the Rocky Mountains.
+                    we've got you covered. Our comprehensive guides ensure that your exploration of 
+                    the Rockies is not just a journey, but a truly 
+                    unforgettable experience. Join us in celebrating the wild, the majestic, 
+                    and the awe-inspiring wonders of the Rocky Mountains.
                 </p>
             </div>
             <Box className='HomeBtns'>
