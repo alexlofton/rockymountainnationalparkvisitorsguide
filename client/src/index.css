@@ -134,8 +134,7 @@
 }
 
 .accPanel {
-    background-color: rgb(138, 114, 61);
-    background-color: rgb(170, 141, 79);
+    background-color: var(--vLtan);
 
 }
 
@@ -159,7 +158,18 @@
 
 .btnDiv {
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.tImgDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.tImg {
+    border: 4px solid var(--darkGreen);
 }
 
 /* Single object */
