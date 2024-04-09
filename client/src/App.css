@@ -59,3 +59,23 @@ main {
     display: flex;
     justify-content: center;
 }
+
+.wildlife-styles {
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.vis-amn-styles {
+    display: inline-block;
+    align-items: center;
+    max-width:auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+  
