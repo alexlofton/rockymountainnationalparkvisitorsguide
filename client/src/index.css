@@ -105,12 +105,14 @@
 }
 
 /* trails Accordian styling */
-/* .accCont {
+.accCont {
     margin: 3rem;
     margin-top: 1rem;
     max-width: auto !important;
-    padding: 3rem;
-} */
+    /* padding: 3rem; */
+    margin-inline: 0px !important;
+    max-width: none !important;
+}
 
 .accItem {
     border: 1px solid #00000000 !important;
@@ -205,9 +207,9 @@
     text-align: start;    
 }
 
-.comment {
+/* .comment {
     
-}
+} */
 
 .TcommUser {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
