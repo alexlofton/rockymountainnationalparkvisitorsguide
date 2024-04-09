@@ -26,8 +26,11 @@ const Home = () => {
     };
 
     return (
+      <>
+
         <div className='HomeBd'>
-            <img className="Logo" src="../src/assets/RMLOGO.png" alt="Rocky Mountains Logo" />
+            <img className="Logo" src="/assets/RMLOGO.png" alt="Rocky Mountains Logo" />
+
             <div className='Homelanding'>
                 <h1> Discover Rocky Mountain's marvels, one adventure at a time.</h1>
                 <p className='HomeDesc'>Nestled amidst the breathtaking beauty of the Rocky Mountains, our website
