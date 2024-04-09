@@ -1,5 +1,8 @@
 import { useParams } from "react-router-dom";
-import dummyTrailData from '../../dummyData/dumTrails.json';
+import { useQuery } from "@apollo/client";
+import { ONE_TRAIL } from "../utils/queries";
+
+// import dummyTrailData from '../../dummyData/dumTrails.json';
 import { Container, Box } from '@chakra-ui/react'
 import TrailComments from "../components/TrailComments";
 
@@ -7,13 +10,15 @@ const SingleTrail = () => {
     const { trailId } = useParams();
 
     // do query action to find based on trial ID
+    const { loading, data } = useQuery(ONE_TRAIL, {
+        variables: { trailId: trailId }
+    })
 
-    // DUMMY DATA FUNCTION TO FIND BY ID
-    const findTrailById = (trails, id) => {
-        return trails.find(trail => trail._id === parseInt(id));
-    };
+    const trail = data?.oneTrail || {};
 
-    const trail = findTrailById(dummyTrailData, trailId)
+    if (loading) {
+        return <div>Loading...</div>;
+    }
     console.log(trail)
 
     return (

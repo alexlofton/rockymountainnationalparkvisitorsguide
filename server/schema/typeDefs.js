@@ -21,6 +21,7 @@ const typeDefs = gql`
         trailId: ID
         name: String
         description: String
+        length: String
         weather: String
         image: String,
         comments: [Comment]
@@ -71,6 +72,7 @@ const typeDefs = gql`
     type Query {
         me: User
         allTrails: [Trail]
+        oneTrail(trailId: ID!): Trail
     }
     
     type Mutation {

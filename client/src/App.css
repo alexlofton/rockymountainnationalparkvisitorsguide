@@ -67,7 +67,6 @@ main {
 
 .HomeBd {
     flex-direction: column;
-    height: 100vh;
 }
 
 .UserBox {
