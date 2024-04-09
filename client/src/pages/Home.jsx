@@ -26,7 +26,6 @@ const Home = () => {
     };
 
     return (
-      <>
 
         <div className='HomeBd'>
             <img className="Logo" src="/assets/RMLOGO.png" alt="Rocky Mountains Logo" />
