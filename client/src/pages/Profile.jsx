@@ -11,6 +11,7 @@ import { MdPerson3 } from "react-icons/md";
 import LoginForm from '../components/LoginForm/index';
 import SignupForm from '../components/SignupForm/index';
 import Auth from '../utils/auth';
+import compTrailData from '../../dummyData/dumCompTrials.json'
 
 const Profile = () => {
 
@@ -39,7 +40,14 @@ const Profile = () => {
 
                             <TabPanels>
                                 <TabPanel>
-                                    <p>one!</p>
+                                    {compTrailData.map((trail, index) => (
+                                        <Box className='CompTrailInfo' key={index} mb={4}>
+                                            <h3><b>Trail Name: </b>{trail.name}</h3>
+                                            <p><b>Trail Description: </b>{trail.description}</p>
+                                            <p><b>Length: </b>{trail.length}</p>
+                                            <p><b>Comments: </b>{trail.trailComments}</p>
+                                        </Box>
+                                    ))}
                                 </TabPanel>
                                 {/* <TabPanel>
                                     <p>two!</p>
