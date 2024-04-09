@@ -1,6 +1,6 @@
 const { Schema, types, model } = require('mongoose');
 const commentSchema = require("./Comment")
-const Trail = require("./Trail")
+
 
 const climbingSchema = new Schema(
     {
@@ -14,10 +14,10 @@ const climbingSchema = new Schema(
         image: {
             type: String
         },
-<<<<<<< HEAD
-        trail: [Trail],
-=======
->>>>>>> a19f0e5d8920aef8a03d564c47cf74871a0f7ef6
+        trail: [{
+            type: Schema.Types.ObjectId,
+            ref: "trail"
+        }],
         comments: [commentSchema]
     },
 

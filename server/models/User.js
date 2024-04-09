@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 const Trail = require('./Trail');
 const wildlifeSchema = require('./Wildlife');
 //const commentSchema = require('./Comment');
-// const completedTrailSchema = require("./completedTrail.js");
+const completedTrailSchema = require("./completedTrail.js");
 const Wildlife = require('./Wildlife');
 const Climbing = require('./Climbing')
 
@@ -21,7 +21,7 @@ const userSchema = new Schema(
     
     trails: [{type: Schema.Types.ObjectId, ref: "trail"}],// wishlist
     completedTrails: [completedTrailSchema], // strings that will receive mapped names from Trail model and complete date from datepicker
-    wildlife: [wildlifeSchema],
+    wildlife: [{type: Schema.Types.ObjectId, ref: "Wildlife"}],
     //comments: [commentSchema]
 },
 
