@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { FormControl, FormLabel, Input, Button, FormErrorMessage, useToast } from '@chakra-ui/react';
 import { useMutation } from '@apollo/client';
-// import { LOGIN_USER } from '../utils/mutations';
-// import Auth from '../utils/auth';
+import { LOGIN_USER } from '../../utils/mutations';
+import Auth from '../../utils/auth';
 
 const LoginForm = () => {
   const [userFormData, setUserFormData] = useState({ username: '', password: '' });
   const [showAlert, setShowAlert] = useState(false);
-//   const [login, { error }] = useMutation(LOGIN_USER);
+const [login, { error }] = useMutation(LOGIN_USER);
   const toast = useToast();
 
   const handleInputChange = (event) => {
@@ -19,7 +19,7 @@ const LoginForm = () => {
     event.preventDefault();
     try {
       const { data } = await login({ variables: { ...userFormData } });
-    //   Auth.login(data.login.token);
+    Auth.login(data.login.token);
       toast({
         title: "Login successful.",
         description: "You've been logged in.",
@@ -71,7 +71,7 @@ const LoginForm = () => {
           mt={4}
           colorScheme="green"
           type="submit"
-          isDisabled={!(userFormData.username && userFormData.password)}
+          isDisabled={!userFormData.username && !userFormData.password}
         >
           Submit
         </Button>
