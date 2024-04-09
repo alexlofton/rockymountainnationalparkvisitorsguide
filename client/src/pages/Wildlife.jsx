@@ -20,6 +20,14 @@ function WildlifePage() {
       seen: false
     },
 
+    {
+      id: 2,
+      name: 'Bighorn Sheep',
+      imageSrc: '/assets/animals/bighornsheep.jpg',
+      description: "The bighorn sheep commands attention with its imposing presence and rugged beauty. With its magnificent curved horns and rugged, muscular build, this iconic creature embodies a spirit of mastery in this alpine wilderness.",
+      seen: false
+    },
+
     //Add more species or groups of species 
     
   ]);
