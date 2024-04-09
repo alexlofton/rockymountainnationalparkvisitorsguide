@@ -15,8 +15,16 @@ function WildlifePage() {
     {
       id: 2,
       name: 'Moose',
-      imageSrc: '/client/src/assets/animals/moose.jpg',
+      imageSrc: '/assets/animals/moose.jpg',
       description: 'Towering above the landscape with its massive frame and impressive antlers, the moose commands attention and respect. Often found grazing in meadows or wading through mountain lakes and streams, this magnificent creature is perfectly adapted to its natural habitat.',
+      seen: false
+    },
+
+    {
+      id: 2,
+      name: 'Bighorn Sheep',
+      imageSrc: '/assets/animals/bighornsheep.jpg',
+      description: "The bighorn sheep commands attention with its imposing presence and rugged beauty. With its magnificent curved horns and rugged, muscular build, this iconic creature embodies a spirit of mastery in this alpine wilderness.",
       seen: false
     },
 
