@@ -19,7 +19,6 @@
 }
 
 main {
-    /* display: inline-block; */
     margin: 20px;
     padding-left: 15%;
 }
@@ -70,7 +69,6 @@ main {
 }
 
 .UserBox {
-    height: 100vh;
     align-content: space-evenly;
     display: block;
     margin: auto;
@@ -82,12 +80,8 @@ main {
     width: auto;
     border-radius: 25px;
     justify-content: center;
-      margin: auto;
+    margin: auto;
     padding: 35px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     box-shadow: 1px 0 20px -5px #000000
 
 
@@ -124,7 +118,6 @@ main {
 
 .BdyCntn{
     align-items: center;
-    width: 100vh;
     display: flex;
 }
 

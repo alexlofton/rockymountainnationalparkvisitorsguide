@@ -32,13 +32,13 @@ const TrailList = ({ trails, user }) => {
                                     <GridItem className='trailGitem' textAlign='left'>
                                         {trail.name}
                                     </GridItem>
-                                    <GridItem className='trailGitem' textAlign='right'>
+                                    <GridItem className='trailGitem' textAlign='center'>
                                         {trail.length}
                                     </GridItem>
                                 </Grid>
-                                {/* <Checkbox mt={4} color="white" isChecked={completed} onChange={onCheckboxChange}>
+                                <Checkbox mt={4} color="white" isChecked={completed} onChange={onCheckboxChange}>
                                     Completed
-                                </Checkbox> */}
+                                </Checkbox>
                                 <AccordionIcon />
                             </AccordionButton>
                             <AccordionPanel className='accPanel'>
