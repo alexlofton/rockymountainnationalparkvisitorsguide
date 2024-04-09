@@ -105,7 +105,7 @@ throw new AuthenticationError("You need to be logged in!");
     },
 
     completeTrail: async (parent, { completeData }, context) => {
-       if (context.user) {
+    if (context.user) {
         const updatedUser = await User.findOneAndUpdate(
         { _id: context.user._id },
         { $push: { completedTrails: completeData } },

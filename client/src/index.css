@@ -22,6 +22,10 @@
     margin: 0%;
 }
 
+#root {
+    min-height: 100vh;
+}
+
 .cusTanBkg {
     background: rgb(91, 73, 35);
     background: linear-gradient(90deg, rgba(91, 73, 35, 1) 0%, rgba(138, 114, 61, 1) 50%, rgba(91, 73, 35, 1) 100%);

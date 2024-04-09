@@ -3,7 +3,8 @@
 }
 
 .NavBar{
-    height: auto;
+    min-height: 100vh;
+    height: auto !important;
 }
 
 .mainCont {
