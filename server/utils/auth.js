@@ -6,37 +6,37 @@ const expiration = '2h';
 
 module.exports = {
   // function for our authenticated routes
-authMiddleware: function ({req}) {
+  authMiddleware: function ({ req }) {
     // allows token to be sent via  req.query or headers
-    let token = req.query.token || req.headers.authorization;
+    let token = req.body.token || req.query.token || req.headers.authorization || req.headers.token;
 
     // ["Bearer", "<tokenvalue>"]
     if (req.headers.authorization) {
-    token = token.split(' ').pop().trim();
+      token = token.split(' ').pop().trim();
     }
 
     if (!token) {
       //return res.status(400).json({ message: 'You have no token!' });
-    return req;
+      return req;
     }
 
     // verify token and get user data out of it
     try {
-    const { data } = jwt.verify(token, secret, { maxAge: expiration });
-    req.user = data;
+      const { data } = jwt.verify(token, secret, { maxAge: expiration });
+      req.user = data;
     } catch {
-    console.log('Invalid token?');
+      console.log('Invalid token?');
       //return res.status(400).json({ message: 'invalid token!' });
     }
 
     // send to next endpoint
-return req;
-},
+    return req;
+  },
 
   // took out email from parameters and payload
-signToken: function ({ username, _id }) {
+  signToken: function ({ username, _id }) {
     const payload = { username, _id };
 
     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
-},
+  },
 };

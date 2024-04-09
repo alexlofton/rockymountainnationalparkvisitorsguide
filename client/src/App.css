@@ -5,6 +5,7 @@
 .NavBar{
     min-height: 100vh;
     height: auto !important;
+    min-width: 200px;
 }
 
 .mainCont {
@@ -18,29 +19,32 @@
 }
 
 main {
-    display: inline-block;
     margin: 20px;
     padding-left: 15%;
 }
 
 .Homelanding {
-    font-size: 5vh;
+    font-size: 50px;
     text-align: center;
     padding: 30px;
     font-weight: bold;
+    display: block;
+    flex-direction: column;
 }
 
-.HomeDesc{
+.HomeDesc {
     font-size: 16px;
     padding: 30px;
+    display: block;
 }
 
-.Logo{
+.Logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 450px;
     height: 400px;
+    flex-direction: column;
 }
 
 .SignupButton:hover {
@@ -55,7 +59,75 @@ main {
     transition: 300ms;
 }
 
-.HomeBtns{
-    display: flex;
+.HomeBtns {
     justify-content: center;
+    display: flex;
 }
+
+.HomeBd {
+    flex-direction: column;
+}
+
+.UserBox {
+    align-content: space-evenly;
+    display: block;
+    margin: auto;
+}
+
+.UserIb, .UserBtns {
+    background-color: white;
+    height: auto;
+    width: auto;
+    border-radius: 25px;
+    justify-content: center;
+    margin: auto;
+    padding: 35px;
+    box-shadow: 1px 0 20px -5px #000000
+
+
+}
+
+.wildlife-styles {
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.vis-amn-styles {
+    display: inline-block;
+    align-items: center;
+    max-width:auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.UserN{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Usericon{
+    justify-content: center;
+    display: flex;
+} 
+
+.BdyCntn{
+    align-items: center;
+    display: flex;
+}
+
+.LogoutBttn {
+    transform: scale(1.06);
+    color: rgb(147, 231, 147);
+    transition: 300ms;
+}
+/* 
+.CompTrailInfo h3, p {
+    font-weight:bold;
+} */
+

@@ -1,10 +1,11 @@
 import React from 'react';
 import { Box, Heading, Text, Link, UnorderedList, ListItem, Center, Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react';
+import '../../App.css';
 
 function VisitorsAmenities() {
     return (
-        <Center>
-            <Box maxW="xl">
+        <Box className="vis-amn-styles">
+           <Box maxW="100%" alignItems="center">
                 <Card mb={8}
                       bgImage={`linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.0)), url('https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?cs=srgb&dl=pexels-xue-guangjian-1687845.jpg&fm=jpg')`}
                       bgSize="cover"
@@ -77,7 +78,7 @@ function VisitorsAmenities() {
                 </Card>
            
             </Box>
-        </Center>
+        </Box>
     );
 }
 

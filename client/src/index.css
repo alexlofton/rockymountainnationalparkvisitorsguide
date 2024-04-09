@@ -105,12 +105,13 @@
 }
 
 /* trails Accordian styling */
-/* .accCont {
+.accCont {
     margin: 3rem;
     margin-top: 1rem;
     max-width: auto !important;
-    padding: 3rem;
-} */
+    margin-inline: 0px !important;
+    max-width: none !important;
+}
 
 .accItem {
     border: 1px solid #00000000 !important;
@@ -133,8 +134,7 @@
 }
 
 .accPanel {
-    background-color: rgb(138, 114, 61);
-    background-color: rgb(170, 141, 79);
+    background-color: var(--vLtan);
 
 }
 
@@ -158,7 +158,18 @@
 
 .btnDiv {
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.tImgDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.tImg {
+    border: 4px solid var(--darkGreen);
 }
 
 /* Single object */
@@ -205,9 +216,9 @@
     text-align: start;    
 }
 
-.comment {
+/* .comment {
     
-}
+} */
 
 .TcommUser {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

@@ -7,17 +7,22 @@ import {
     Container,
     Box,
     Grid,
-    GridItem
+    GridItem,
+    Checkbox
 } from '@chakra-ui/react'
 
 import { Link } from 'react-router-dom'
 
+import * as React from 'react'
 
-const TrailList = ({ trails, user }) => {
+
+const TrailList = ({ trails, user}) => {
+
     console.log("user", user)
     // if (blah) {
     // return <h1>No trails, sorry</h1>
     // }
+    // console.log(trails)
     return (
         <Container className='accCont'>
             <Accordion >
@@ -29,10 +34,14 @@ const TrailList = ({ trails, user }) => {
                                     <GridItem className='trailGitem' textAlign='left'>
                                         {trail.name}
                                     </GridItem>
-                                    <GridItem className='trailGitem' textAlign='right'>
+                                    <GridItem className='trailGitem' textAlign='center'>
                                         {trail.length}
                                     </GridItem>
                                 </Grid>
+                                <Checkbox mt={4} color="white">
+                                    Completed
+                                </Checkbox>
+
                                 <AccordionIcon />
                             </AccordionButton>
                             <AccordionPanel className='accPanel'>
@@ -40,11 +49,15 @@ const TrailList = ({ trails, user }) => {
                                     {trail.description}
                                 </p>
                                 <div className='btnDiv'>
-                                    <Link className='accPanBtn' to={`/Trails/${trail._id}`}>
+                                    <Link
+                                        className='accPanBtn'
+                                        to={`/Trails/${trail._id}`}>
                                         FULL PAGE
                                     </Link>
                                 </div>
-                                <img src={trail.image} alt="" />
+                                <div className='tImgDiv'>
+                                    <img src={trail.image} alt="" className='tImg'/>
+                                </div>
                             </AccordionPanel>
                         </AccordionItem>
                     ))

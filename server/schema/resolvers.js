@@ -8,133 +8,137 @@ const { Schema, Types, model } = require('mongoose');
 const { FormErrorIcon } = require("@chakra-ui/react");
 
 const resolvers = {
-Query: {
-    me: async (parent, args, context) => {
-    if (context.user) {
-        const userData = await User.findOne({ _id: context.user._id })
-        .select("-__v -password")
-        // .populate("trails");
+    Query: {
+        me: async (parent, args, context) => {
+            if (context.user) {
+                const userData = await User.findOne({ _id: context.user._id })
+                    .select("-__v -password")
+                // .populate("trails");
 
-        return userData;
-    }
+                return userData;
+            }
 
-    throw new AuthenticationError("Not logged in");
-    },
-    // need queries for Trails
-    allTrails: async (parent, args, context) => {
-if (context.user) {
-        console.log("hit here")
-        const trailData = await Trail.find();
-        console.log(trailData)
-        return trailData;
-    }
+            throw new AuthenticationError("Not logged in");
+        },
+        // need queries for Trails
+        allTrails: async (parent, args, context) => {
+            if (context.user) {
+                console.log("hit here")
+                const trailData = await Trail.find();
+                // console.log(trailData)
+                return trailData;
+            }
 
-throw new AuthenticationError("Not logged in");
-    },
+            throw new AuthenticationError("Not logged in");
+        },
+        oneTrail: async (parent, { trailId }) => {
+            const trailData = await Trail.findOne({ _id: trailId });
+            return trailData;
+        },
 
-    // getAllWildLife: async (parent, arg, context) => {
-    //     if (context.user) {
-    //         const wildlifeData = await Wildlife.find({});
+        // getAllWildLife: async (parent, arg, context) => {
+        //     if (context.user) {
+        //         const wildlifeData = await Wildlife.find({});
 
-    //         return wildlifeData
-    //     }
+        //         return wildlifeData
+        //     }
 
 
-    // }
-},
-
-Mutation: {
-    addUser: async (parent, args) => {
-    const user = await User.create(args);
-    const token = signToken(user);
-
-    return { token, user };
+        // }
     },
 
-    // addWildlife: async (parent, args) => {
-    // const newWildlife = await wildlifeSchema.create(args);
+    Mutation: {
+        addUser: async (parent, args) => {
+            const user = await User.create(args);
+            const token = signToken(user);
 
-    // return { newWildlife }
-    // },
+            return { token, user };
+        },
 
-    login: async (parent, { username, password }) => {
-    const user = await User.findOne({ username });
+        // addWildlife: async (parent, args) => {
+        // const newWildlife = await wildlifeSchema.create(args);
 
-    if (!user) {
-        throw new AuthenticationError("Incorrect credentials");
-    }
+        // return { newWildlife }
+        // },
 
-    const correctPw = await user.isCorrectPassword(password);
+        login: async (parent, { username, password }) => {
+            const user = await User.findOne({ username });
 
-    if (!correctPw) {
-        throw new AuthenticationError("Incorrect credentials");
-    }
+            if (!user) {
+                throw new AuthenticationError("Incorrect credentials");
+            }
 
-    const token = signToken(user);
-    return { token, user };
-    },
+            const correctPw = await user.isCorrectPassword(password);
 
-    saveTrail: async (parent, { trailData }, context) => {
-    if (context.user) {
-    
-        const updatedUser = await User.findOneAndUpdate(
-        { _id: context.user._id },
-        { $push: { trails: trailData }  },
-    
-        { new: true }
-        ).populate("trails");
-        console.log(updatedUser)
-        return updatedUser;
-}
+            if (!correctPw) {
+                throw new AuthenticationError("Incorrect credentials");
+            }
 
-throw new AuthenticationError("You need to be logged in!");
-    },
+            const token = signToken(user);
+            return { token, user };
+        },
 
-    removeTrail: async (parent, { trailId }, context) => {
-    if (context.user) {
-        const updatedUser = await User.findOneAndUpdate(
-        { _id: context.user._id },
-        { $pull: { trails: { trailId } } },
-        { new: true }
-        );
+        saveTrail: async (parent, { trailData }, context) => {
+            if (context.user) {
 
-        return updatedUser;
-    }
+                const updatedUser = await User.findOneAndUpdate(
+                    { _id: context.user._id },
+                    { $push: { trails: trailData } },
 
-throw new AuthenticationError("You need to be logged in!");
-    },
+                    { new: true }
+                ).populate("trails");
+                // console.log(updatedUser)
+                return updatedUser;
+            }
 
-    completeTrail: async (parent, { completeData }, context) => {
-    if (context.user) {
-        const updatedUser = await User.findOneAndUpdate(
-        { _id: context.user._id },
-        { $push: { completedTrails: completeData } },
-        { new: true }
-        );
-        
-        return updatedUser;
-        }
-        
-    throw new AuthenticationError('You need to be logged in!');
+            throw new AuthenticationError("You need to be logged in!");
+        },
+
+        removeTrail: async (parent, { trailId }, context) => {
+            if (context.user) {
+                const updatedUser = await User.findOneAndUpdate(
+                    { _id: context.user._id },
+                    { $pull: { trails: { trailId } } },
+                    { new: true }
+                );
+
+                return updatedUser;
+            }
+
+            throw new AuthenticationError("You need to be logged in!");
+        },
+
+        completeTrail: async (parent, { completeData }, context) => {
+            if (context.user) {
+                const updatedUser = await User.findOneAndUpdate(
+                    { _id: context.user._id },
+                    { $push: { completedTrails: completeData } },
+                    { new: true }
+                );
+
+                return updatedUser;
+            }
+
+            throw new AuthenticationError('You need to be logged in!');
         },
 
         // remove from complete trails nice to have reference removeTrail
 
 
-//         // comment
-        addComment: async (parent, {commentData}, context) => {
+        //         // comment
+        addComment: async (parent, { commentData }, context) => {
             if (context.user) {
                 const updatedTrail = await Trail.findByIdAndUpdate(
-                { _id: trail._id },
-                { $push: { comments: commentData } },
-                { new: true }
+                    { _id: trail._id },
+                    { $push: { comments: commentData } },
+                    { new: true }
                 );
-                console.log(updatedTrail)
-                
+                // console.log(updatedTrail)
+
                 return updatedTrail;
-                }    
-                
-        throw new AuthenticationError('You need to be logged in!');
+            }
+
+            throw new AuthenticationError('You need to be logged in!');
         }
     },
 };

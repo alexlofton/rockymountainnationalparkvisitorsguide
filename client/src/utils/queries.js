@@ -28,6 +28,7 @@ allTrails {
    name
    description
    image
+   length
    comments {
       commentText
       likes
@@ -36,3 +37,20 @@ allTrails {
    }
 }
 `;
+
+export const ONE_TRAIL = gql`
+   query getOneTrail($trailId: ID!) {
+      oneTrail(trailId: $trailId) {
+         _id
+         trailId
+         name
+         description
+         image
+         length
+         comments {
+            commentText
+            likes
+         }
+      } 
+   }
+`
