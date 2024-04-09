@@ -7,7 +7,7 @@ import { ADD_USER } from '../../utils/mutations';
 
 const SignupForm = () => {
     const [userFormData, setUserFormData] = useState({ username: '', password: '' });
-    // const [validated] = useState(false);
+    const [validated, setValidated] = useState(false);
     const toast = useToast();
 
     const [addUser, { error }] = useMutation(ADD_USER);
@@ -31,12 +31,7 @@ const SignupForm = () => {
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
-
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-        }
+        setValidated(true);
 
         try {
             const { data } = await addUser({
