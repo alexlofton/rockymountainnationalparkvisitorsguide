@@ -82,7 +82,7 @@ main {
     width: auto;
     border-radius: 25px;
     justify-content: center;
-    margin: auto;
+      margin: auto;
     padding: 35px;
     position: absolute;
     top: 50%;
@@ -90,6 +90,25 @@ main {
     transform: translate(-50%, -50%);
     box-shadow: 1px 0 20px -5px #000000
 
+
+}
+
+.wildlife-styles {
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.vis-amn-styles {
+    display: inline-block;
+    align-items: center;
+    max-width:auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
 }
 
 .UserN{
@@ -118,3 +137,4 @@ main {
 .CompTrailInfo h3, p {
     font-weight:bold;
 } */
+

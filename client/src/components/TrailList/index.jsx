@@ -7,14 +7,16 @@ import {
     Container,
     Box,
     Grid,
-    GridItem
+    GridItem,
+    Checkbox
 } from '@chakra-ui/react'
 
 import { Link } from 'react-router-dom'
 
+import * as React from 'react'
 
-const TrailList = ({ trails, user }) => {
-    // console.log("user", user)
+const TrailList = ({ trails, user, completed, onCheckboxChange }) => {
+    console.log("user", user)
     // if (blah) {
     // return <h1>No trails, sorry</h1>
     // }
@@ -34,6 +36,9 @@ const TrailList = ({ trails, user }) => {
                                         {trail.length}
                                     </GridItem>
                                 </Grid>
+                                <Checkbox mt={4} color="white" isChecked={completed} onChange={onCheckboxChange}>
+                                    Completed
+                                </Checkbox>
                                 <AccordionIcon />
                             </AccordionButton>
                             <AccordionPanel className='accPanel'>
