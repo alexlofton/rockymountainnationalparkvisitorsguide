@@ -20,6 +20,7 @@ const TrailList = ({ trails, user, completed, onCheckboxChange }) => {
     // if (blah) {
     // return <h1>No trails, sorry</h1>
     // }
+    // console.log(trails)
     return (
         <Container className='accCont'>
             <Accordion >
@@ -43,13 +44,18 @@ const TrailList = ({ trails, user, completed, onCheckboxChange }) => {
                             <AccordionPanel className='accPanel'>
                                 <p>
                                     {trail.description}
+                                    {trail._id}
                                 </p>
                                 <div className='btnDiv'>
-                                    <Link className='accPanBtn' to={`/Trails/${trail._id}`}>
+                                    <Link
+                                        className='accPanBtn'
+                                        to={`/Trails/${trail._id}`}>
                                         FULL PAGE
                                     </Link>
                                 </div>
-                                <img src={trail.image} alt="" />
+                                <div className='tImgDiv'>
+                                    <img src={trail.image} alt="" className='tImg'/>
+                                </div>
                             </AccordionPanel>
                         </AccordionItem>
                     ))
